@@ -3,8 +3,8 @@ Contributors: EnigmaWeb, Base29
 Donate link: http://enigmaweb.com.au
 Tags: mp3 player, audio player, music player, ogg player, HTML5 audio player, mp3, podcast, jquery player
 Requires at least: 3.1
-Tested up to: 3.3
-Stable tag: 1.0.1
+Tested up to: 3.4.1
+Stable tag: trunk
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -77,10 +77,16 @@ If you've tried all the obvious stuff and it's still not working please request 
 
 == Changelog ==
 
+= 1.1 =
+* Added sidebar with support forum, donate and wordpress.org links
+
 = 1.0 =
 * Initial release
 
 == Upgrade Notice ==
 
+= 1.1 =
+* Added sidebar with support forum, donate and wordpress.org links
+
 = 1.0 =
-Initial release
+* Initial release

@@ -163,7 +163,7 @@ $uresults 	= 	$wpdb->get_row( $usql  );
 </form></td>
                     </tr>
                     <tr>
-                    	<td style="border:0;">you can also help by <a href="#">rating this plugin plugin on wordpress.org</a></td>
+                    	<td style="border:0;">you can also help by <a href="http://wordpress.org/extend/plugins/html5-jquery-audio-player/">rating this plugin plugin on wordpress.org</a></td>
                     </tr>
                    
                 </tbody>
@@ -174,7 +174,7 @@ $uresults 	= 	$wpdb->get_row( $usql  );
                 </thead>
                 <tbody>
                 	<tr>
-                    	<td style="border:0;">If you are having problems with plugin please talk about them on <a href="#">Support Forums</a></td>
+                    	<td style="border:0;">If you are having problems with plugin please talk about them on <a href="http://wordpress.org/support/plugin/html5-jquery-audio-player">Support Forums</a></td>
                     </tr>
                    
                 </tbody>
@@ -292,7 +292,7 @@ $uresults 	= 	$wpdb->get_row( $usql  );
 </form></td>
                     </tr>
                     <tr>
-                    	<td style="border:0;">you can also help by <a href="#">rating this plugin plugin on wordpress.org</a></td>
+                    	<td style="border:0;">you can also help by <a href="http://wordpress.org/extend/plugins/html5-jquery-audio-player/">rating this plugin plugin on wordpress.org</a></td>
                     </tr>
                    
                 </tbody>
@@ -303,7 +303,7 @@ $uresults 	= 	$wpdb->get_row( $usql  );
                 </thead>
                 <tbody>
                 	<tr>
-                    	<td style="border:0;">If you are having problems with plugin please talk about them on <a href="#">Support Forums</a></td>
+                    	<td style="border:0;">If you are having problems with plugin please talk about them on <a href="http://wordpress.org/support/plugin/html5-jquery-audio-player">Support Forums</a></td>
                     </tr>
                    
                 </tbody>

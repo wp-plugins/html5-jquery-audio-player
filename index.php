@@ -2,10 +2,10 @@
 
 /*
 Plugin Name: HTML5 jQuery Audio Player
-Plugin URI: http://www.enigmaweb.com.au/html5-jquery-audio-player-plugin-for-wordpress/
+Plugin URI: http://wordpress.org/extend/plugins/html5-jquery-audio-player/
 Description: The trendiest audio player plugin for WordPress. Works on iPhone/iPad and other mobile devices. Insert with shortcode [hmp_player]
 Author: Enigma Digital
-Version: 1.0.1
+Version: 1.1
 Author URI: http://enigmaweb.com.au
 */
 
