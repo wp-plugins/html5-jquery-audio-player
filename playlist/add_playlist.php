@@ -163,7 +163,7 @@ $uresults 	= 	$wpdb->get_row( $usql  );
 </form></td>
                     </tr>
                     <tr>
-                    	<td style="border:0;">you can also help by <a href="http://wordpress.org/extend/plugins/html5-jquery-audio-player/">rating this plugin plugin on wordpress.org</a></td>
+                    	<td style="border:0;">you can also help by <a href="http://wordpress.org/extend/plugins/html5-jquery-audio-player/" target="_blank">rating this plugin plugin on wordpress.org</a></td>
                     </tr>
                    
                 </tbody>
@@ -174,7 +174,7 @@ $uresults 	= 	$wpdb->get_row( $usql  );
                 </thead>
                 <tbody>
                 	<tr>
-                    	<td style="border:0;">If you are having problems with plugin please talk about them on <a href="http://wordpress.org/support/plugin/html5-jquery-audio-player">Support Forums</a></td>
+                    	<td style="border:0;">If you are having problems with plugin please talk about them on <a href="http://wordpress.org/support/plugin/html5-jquery-audio-player" target="_blank">Support Forums</a></td>
                     </tr>
                    
                 </tbody>
@@ -230,7 +230,7 @@ $uresults 	= 	$wpdb->get_row( $usql  );
         
          <tr valign="top">
         <th scope="row"><input type="submit" class="button-primary" value="<?php _e('Update Song') ?>" name="update" /></th>
-        <td> <a href="<?php $_SERVER['PHP_SELF']; ?>?page=hmp_playlist&action=addt"><input type="button" class="button-primary" value="<?php _e('Add New Song') ?>" name="update" /></a></td>
+        <td> <a href="<?php bloginfo('url'); ?>/wp-admin/admin.php?page=hmp_palylist&action=add"><input type="button" class="button-primary" value="<?php _e('Add New Song') ?>" name="update" /></a></td>
         <td></td>
         </tr>
          
@@ -292,7 +292,7 @@ $uresults 	= 	$wpdb->get_row( $usql  );
 </form></td>
                     </tr>
                     <tr>
-                    	<td style="border:0;">you can also help by <a href="http://wordpress.org/extend/plugins/html5-jquery-audio-player/">rating this plugin plugin on wordpress.org</a></td>
+                    	<td style="border:0;">you can also help by <a href="http://wordpress.org/extend/plugins/html5-jquery-audio-player/" target="_blank">rating this plugin plugin on wordpress.org</a></td>
                     </tr>
                    
                 </tbody>
@@ -303,7 +303,7 @@ $uresults 	= 	$wpdb->get_row( $usql  );
                 </thead>
                 <tbody>
                 	<tr>
-                    	<td style="border:0;">If you are having problems with plugin please talk about them on <a href="http://wordpress.org/support/plugin/html5-jquery-audio-player">Support Forums</a></td>
+                    	<td style="border:0;">If you are having problems with plugin please talk about them on <a href="http://wordpress.org/support/plugin/html5-jquery-audio-player" target="_blank">Support Forums</a></td>
                     </tr>
                    
                 </tbody>
@@ -413,8 +413,8 @@ $uresults 	= 	$wpdb->get_row( $usql  );
         <td width="10%"><?php echo $result->price; ?></td>
          <td width="10%"><?php echo $result->rating; ?></td>
           <td width="10%"><?php echo $result->duration; ?></td>
-        <td width="10%"><a href="<?php $_SERVER['PHP_SELF']; ?>?page=hmp_playlist&action=update&id=<?php echo $result->id; ?>">Update</a></td>
-        <td width="10%"><a href="<?php $_SERVER['PHP_SELF']; ?>?page=hmp_playlist&action=delete&id=<?php echo $result->id; ?>">Delete</a></td>
+        <td width="10%"><a href="<?php bloginfo('url'); ?>/wp-admin/admin.php?page=hmp_palylist&action=update&id=<?php echo $result->id; ?>">Update</a></td>
+        <td width="10%"><a href="<?php bloginfo('url'); ?>/wp-admin/admin.php?page=hmp_palylist&action=delete&id=<?php echo $result->id; ?>">Delete</a></td>
 	</tr>
 	<?php endforeach; ?>
 	

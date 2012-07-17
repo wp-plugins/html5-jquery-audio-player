@@ -77,6 +77,9 @@ If you've tried all the obvious stuff and it's still not working please request 
 
 == Changelog ==
 
+= 1.2 =
+* Fixed a filepath bug - some users were unable to update/delete tracks from playlist, this is now fixed.
+
 = 1.1 =
 * Added sidebar with support forum, donate and wordpress.org links
 
@@ -84,6 +87,9 @@ If you've tried all the obvious stuff and it's still not working please request 
 * Initial release
 
 == Upgrade Notice ==
+
+= 1.2 =
+* Fixed a filepath bug - some users were unable to update/delete tracks from playlist, this is now fixed.
 
 = 1.1 =
 * Added sidebar with support forum, donate and wordpress.org links
