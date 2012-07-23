@@ -77,6 +77,9 @@ If you've tried all the obvious stuff and it's still not working please request 
 
 == Changelog ==
 
+= 1.3 =
+* Added jQuery noConflict wrapper and fixed a typo - the playlist was not displaying for some users due to a jQuery conflict, this update fixes the problem.
+
 = 1.2 =
 * Fixed a filepath bug - some users were unable to update/delete tracks from playlist, this is now fixed.
 
@@ -87,6 +90,9 @@ If you've tried all the obvious stuff and it's still not working please request 
 * Initial release
 
 == Upgrade Notice ==
+
+= 1.3 =
+* Added jQuery noConflict wrapper and fixed a typo - the playlist was not displaying for some users due to a jQuery conflict, this update fixes the problem.
 
 = 1.2 =
 * Fixed a filepath bug - some users were unable to update/delete tracks from playlist, this is now fixed.
