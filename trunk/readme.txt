@@ -77,6 +77,9 @@ If you've tried all the obvious stuff and it's still not working please request 
 
 == Changelog ==
 
+= 1.4 =
+* Fixed a problem with the shortcode function - some users were having problems placing the player in a page, this update fixes the issue.
+
 = 1.3 =
 * Added jQuery noConflict wrapper and fixed a typo - the playlist was not displaying for some users due to a jQuery conflict, this update fixes the problem.
 
@@ -90,6 +93,9 @@ If you've tried all the obvious stuff and it's still not working please request 
 * Initial release
 
 == Upgrade Notice ==
+
+= 1.4 =
+* Fixed a problem with the shortcode function - some users were having problems placing the player in a page, this update fixes the issue.
 
 = 1.3 =
 * Added jQuery noConflict wrapper and fixed a typo - the playlist was not displaying for some users due to a jQuery conflict, this update fixes the problem.
