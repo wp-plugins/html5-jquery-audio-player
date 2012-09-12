@@ -24,6 +24,10 @@ This trendy looking music player lets you add a single audio track or a full pla
 *   Can enable Buy or Download tracks button
 *	Add the player to any post/page using shortcode `[hmp_player]`
 
+= Pro vs Lite Version =
+
+This is Lite (free) version of the plugin. But Pro Version is now [available here](http://www.enigmaweb.com.au/plugins/html5-jquery-audio-pro/) Pro version includes a small number of advanced features such as the ability to add multiple playlists and AJAX admin input forms. More features will continue to be added.
+
 = Demo =
 
 [Click here for demo](http://www.galaxybrass.com.au/audio-demo/)
