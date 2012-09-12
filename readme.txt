@@ -3,7 +3,7 @@ Contributors: EnigmaWeb, Base29
 Donate link: http://enigmaweb.com.au
 Tags: mp3 player, audio player, music player, ogg player, HTML5 audio player, mp3, podcast, jquery player
 Requires at least: 3.1
-Tested up to: 3.4.1
+Tested up to: 3.4.2
 Stable tag: trunk
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
@@ -77,6 +77,9 @@ If you've tried all the obvious stuff and it's still not working please request 
 
 == Changelog ==
 
+= 1.5 =
+* Made a bunch of small improvements and fixes for minor issues. Also adjusted the settings menu structure slightly to correlate better with PRO version of the plugin.
+
 = 1.4 =
 * Fixed a problem with the shortcode function - some users were having problems placing the player in a page, this update fixes the issue.
 
@@ -93,6 +96,9 @@ If you've tried all the obvious stuff and it's still not working please request 
 * Initial release
 
 == Upgrade Notice ==
+
+= 1.5 =
+* Made a bunch of small improvements and fixes for minor issues. Also adjusted the settings menu structure slightly to correlate better with PRO version of the plugin.
 
 = 1.4 =
 * Fixed a problem with the shortcode function - some users were having problems placing the player in a page, this update fixes the issue.

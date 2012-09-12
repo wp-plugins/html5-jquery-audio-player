@@ -5,7 +5,7 @@ Plugin Name: HTML5 jQuery Audio Player
 Plugin URI: http://wordpress.org/extend/plugins/html5-jquery-audio-player/
 Description: The trendiest audio player plugin for WordPress. Works on iPhone/iPad and other mobile devices. Insert with shortcode [hmp_player]
 Author: Enigma Digital
-Version: 1.4
+Version: 1.5
 Author URI: http://enigmaweb.com.au
 */
 
@@ -70,7 +70,7 @@ function my_plugin_menu() {
 	add_menu_page( 'HTML5 MP3 Player', 'HTML5 Player', 'manage_options', 'hmp-options', 'wp_hmp_options',plugin_dir_url( __FILE__ )."/music-beam.png" );
 	add_submenu_page('hmp-options','','','manage_options','hmp-options','wp_hmp_options');
 	add_submenu_page('hmp-options','Display Settings','Display Settings','manage_options','display_settings','wp_hmp_options');
-	add_submenu_page( 'hmp-options', 'Manage Playlists', 'Playlists', 'manage_options', 'hmp_palylist', 'wp_hmp_playlist' );
+	add_submenu_page( 'hmp-options', 'Manage Manage Songs', 'Manage Songs', 'manage_options', 'hmp_palylist', 'wp_hmp_playlist' );
 	
 }
 

@@ -5,7 +5,7 @@
 			
 		
 <div class="wrap">
-<h2>Playlist Settings</h2>
+<h2>Manage Songs</h2>
 <?php
 
 
@@ -152,29 +152,40 @@ $uresults 	= 	$wpdb->get_row( $usql  );
                 </thead>
                 <tbody>
                 	<tr>
-                    	<td style="border:0;">Enjoyed this plugin? All donations are used to improve and further develop this plugin. Thanks for your contributaion.</td>
+                    	<td style="border:0;">Enjoyed this plugin? All donations are used to improve and further develop this plugin. Thanks for your contribution.</td>
                     </tr>
                     <tr>
-                    	<td style="border:0;"><form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_blank">
-<input type="hidden" name="cmd" value="_s-xclick">
-<input type="hidden" name="hosted_button_id" value="A74K2K689DWTY">
-<input type="image" src="https://www.paypalobjects.com/en_AU/i/btn/btn_donateCC_LG.gif" border="0" name="submit" alt="PayPal — The safer, easier way to pay online.">
-<img alt="" border="0" src="https://www.paypalobjects.com/en_AU/i/scr/pixel.gif" width="1" height="1">
-</form></td>
+                    	<td style="border:0;"><!--<img src="<?php //echo plugin_dir_url( __FILE__ )."donate.png" ; ?>"  align="middle" />--><form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_blank">
+						<input type="hidden" name="cmd" value="_s-xclick">
+						<input type="hidden" name="hosted_button_id" value="A74K2K689DWTY">
+						<input type="image" src="https://www.paypalobjects.com/en_AU/i/btn/btn_donateCC_LG.gif" border="0" name="submit" alt="PayPal — The safer, easier way to pay online.">
+						<img alt="" border="0" src="https://www.paypalobjects.com/en_AU/i/scr/pixel.gif" width="1" height="1">
+						</form></td>
                     </tr>
                     <tr>
-                    	<td style="border:0;">you can also help by <a href="http://wordpress.org/extend/plugins/html5-jquery-audio-player/" target="_blank">rating this plugin plugin on wordpress.org</a></td>
+                    	<td style="border:0;">You can also help by <a href="http://wordpress.org/extend/plugins/html5-jquery-audio-player/" target="_blank">rating this plugin on wordpress.org</a></td>
+                    </tr>
+                   
+                </tbody>
+            </table>
+			<table cellpadding="0" class="widefat donation" style="margin-bottom:10px;">
+            	<thead>
+                	<th scope="col">Pro Version</th>
+                </thead>
+                <tbody>
+                	<tr>
+                    	<td style="border:0;">Upgrade to Pro Version for advanced features like multiple playlist function<br /><a href="http://www.enigmaweb.com.au/plugins/html5-jquery-audio-pro" target="_blank">View Details</a></td>
                     </tr>
                    
                 </tbody>
             </table>
             <table cellpadding="0" class="widefat" border="0">
             	<thead>
-                	<th scope="col">Need Support</th>
+                	<th scope="col">Need Support?</th>
                 </thead>
                 <tbody>
                 	<tr>
-                    	<td style="border:0;">If you are having problems with plugin please talk about them on <a href="http://wordpress.org/support/plugin/html5-jquery-audio-player" target="_blank">Support Forums</a></td>
+                    	<td style="border:0;">If you are having problems with this plugin please talk about them on the <a href="http://wordpress.org/support/plugin/html5-jquery-audio-player" target="_blank">Support Forum</a></td>
                     </tr>
                    
                 </tbody>
@@ -281,29 +292,40 @@ $uresults 	= 	$wpdb->get_row( $usql  );
                 </thead>
                 <tbody>
                 	<tr>
-                    	<td style="border:0;">Enjoyed this plugin? All donations are used to improve and further develop this plugin. Thanks for your contributaion.</td>
+                    	<td style="border:0;">Enjoyed this plugin? All donations are used to improve and further develop this plugin. Thanks for your contribution.</td>
                     </tr>
                     <tr>
-                    	<td style="border:0;"><form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_blank">
-<input type="hidden" name="cmd" value="_s-xclick">
-<input type="hidden" name="hosted_button_id" value="A74K2K689DWTY">
-<input type="image" src="https://www.paypalobjects.com/en_AU/i/btn/btn_donateCC_LG.gif" border="0" name="submit" alt="PayPal — The safer, easier way to pay online.">
-<img alt="" border="0" src="https://www.paypalobjects.com/en_AU/i/scr/pixel.gif" width="1" height="1">
-</form></td>
+                    	<td style="border:0;"><!--<img src="<?php //echo plugin_dir_url( __FILE__ )."donate.png" ; ?>"  align="middle" />--><form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_blank">
+						<input type="hidden" name="cmd" value="_s-xclick">
+						<input type="hidden" name="hosted_button_id" value="A74K2K689DWTY">
+						<input type="image" src="https://www.paypalobjects.com/en_AU/i/btn/btn_donateCC_LG.gif" border="0" name="submit" alt="PayPal — The safer, easier way to pay online.">
+						<img alt="" border="0" src="https://www.paypalobjects.com/en_AU/i/scr/pixel.gif" width="1" height="1">
+						</form></td>
                     </tr>
                     <tr>
-                    	<td style="border:0;">you can also help by <a href="http://wordpress.org/extend/plugins/html5-jquery-audio-player/" target="_blank">rating this plugin plugin on wordpress.org</a></td>
+                    	<td style="border:0;">You can also help by <a href="http://wordpress.org/extend/plugins/html5-jquery-audio-player/" target="_blank">rating this plugin on wordpress.org</a></td>
+                    </tr>
+                   
+                </tbody>
+            </table>
+			<table cellpadding="0" class="widefat donation" style="margin-bottom:10px;">
+            	<thead>
+                	<th scope="col">Pro Version</th>
+                </thead>
+                <tbody>
+                	<tr>
+                    	<td style="border:0;">Upgrade to Pro Version for advanced features like multiple playlist function<br /><a href="http://www.enigmaweb.com.au/plugins/html5-jquery-audio-pro" target="_blank">View Details</a></td>
                     </tr>
                    
                 </tbody>
             </table>
             <table cellpadding="0" class="widefat" border="0">
             	<thead>
-                	<th scope="col">Need Support</th>
+                	<th scope="col">Need Support?</th>
                 </thead>
                 <tbody>
                 	<tr>
-                    	<td style="border:0;">If you are having problems with plugin please talk about them on <a href="http://wordpress.org/support/plugin/html5-jquery-audio-player" target="_blank">Support Forums</a></td>
+                    	<td style="border:0;">If you are having problems with this plugin please talk about them on the <a href="http://wordpress.org/support/plugin/html5-jquery-audio-player" target="_blank">Support Forum</a></td>
                     </tr>
                    
                 </tbody>
