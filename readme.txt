@@ -81,6 +81,9 @@ If you've tried all the obvious stuff and it's still not working please request 
 
 == Changelog ==
 
+= 1.6 =
+* Fixed several small issues. You can now use apostrophe in description field without it breaking the player, and removed character limits on various input fields. Display issue for long playlists also corrected.
+
 = 1.5 =
 * Made a bunch of small improvements and fixes for minor issues. Also adjusted the settings menu structure slightly to correlate better with PRO version of the plugin.
 
@@ -100,6 +103,9 @@ If you've tried all the obvious stuff and it's still not working please request 
 * Initial release
 
 == Upgrade Notice ==
+
+= 1.6 =
+* Fixed several small issues. You can now use apostrophe in description field without it breaking the player, and removed character limits on various input fields. Display issue for long playlists also corrected.
 
 = 1.5 =
 * Made a bunch of small improvements and fixes for minor issues. Also adjusted the settings menu structure slightly to correlate better with PRO version of the plugin.
