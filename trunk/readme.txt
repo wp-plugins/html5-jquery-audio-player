@@ -59,7 +59,7 @@ Yes. Its designed to work on all major browsers, both PC & Mac, and on mobile de
 
 = Is there a way to easliy replace the 'Buy' button with 'Download' button? =
 
-Yes! Set the buy text option to ‘Download’, leave currency field & song price field blank, and set the buy link option on each song to the url of the mp3 or the script that initiates the download.
+Yes! Set the buy text option to Download, leave currency field & song price field blank, and set the buy link option on each song to the url of the mp3 or the script that initiates the download.
 
 = Can I use this on a non-WordPress site? =
 
