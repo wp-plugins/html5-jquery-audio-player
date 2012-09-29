@@ -21,7 +21,7 @@ This trendy looking music player lets you add a single audio track or a full pla
 *	HTML5 based player with Flash backup 
 *   Works in all major browsers - IE7, IE8, IE9, Safari, Firefox, Chrome
 *   Works on mobile devices including iPhone/iPad
-*   Can enable Buy or Download tracks button
+*   Can enable Buy or Download tracks button - [tutorial here](http://www.enigmaweb.com.au/fetchapp-integration-tutorial/)
 *	Add the player to any post/page using shortcode `[hmp_player]`
 
 = Pro vs Lite Version =
@@ -65,9 +65,9 @@ Yes! Set the buy text option to ‘Download’, leave currency field & song price fi
 
 Yep, sure can. This plugin is just a WordPress version of HTML5 Music Player by Saleem over at [Codebase Hero](http://www.codebasehero.com/2011/06/html-music-player/)
 
-= Can you help me add volume knob, mute function, remove the star rating, add my company’s logo to it, build in functionality to play videos, add a shopping cart module with credit card and PayPal checkout, add a library of 1000 albums including rights for all the music and hand over the code to me for free? =
+= How can I sell my music using this plugin? =
 
-No. Sorry.
+[Check the tutorial here](http://www.enigmaweb.com.au/fetchapp-integration-tutorial/)
 
 = Where can I get support for this plugin? =
 
