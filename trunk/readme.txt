@@ -73,13 +73,13 @@ The most common problem is a jQuery conflict. In short, if your theme loads jQue
 
 Yes! Set the buy text option to Download, leave currency field & song price field blank, and set the buy link option on each song to the url of the mp3 or the script that initiates the download.
 
-= Can I use this on a non-WordPress site? =
-
-Yep, sure can. This plugin is just a WordPress version of HTML5 Music Player by Saleem over at [Codebase Hero](http://www.codebasehero.com/2011/06/html-music-player/)
-
 = How can I sell my music using this plugin? =
 
 [Check the tutorial here](http://www.enigmaweb.com.au/fetchapp-integration-tutorial/)
+
+= Can I use this on a non-WordPress site? =
+
+Yep, sure can. This plugin is just a WordPress version of HTML5 Music Player by Saleem over at [Codebase Hero](http://www.codebasehero.com/2011/06/html-music-player/)
 
 = Where can I get support for this plugin? =
 
