@@ -56,12 +56,10 @@ There are heaps of free conversion tools available - run a search. Personally, I
 = The player is not displaying on the page where I added the code =
 
 When the player doesn't show up at all it is most likely a Mime type issue. This can be solved by adding the following lines to your htaccess file:
-'
-AddType audio/ogg ogg
+`AddType audio/ogg ogg
 AddType audio/ogg oga
 AddType video/ogg ogv
-AddType video/mp4 m4v
-'
+AddType video/mp4 m4v`
 
 = It's not working in browser xyz - can you help? =
 
