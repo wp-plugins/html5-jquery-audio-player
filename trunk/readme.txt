@@ -53,9 +53,21 @@ The plugin supports mp3 and ogg files. You need to upload both an mp3 and ogg ve
 
 There are heaps of free conversion tools available - run a search. Personally, I use [Goldwave.](http://www.goldwave.com/)
 
-= Does this work on all browsers? =
+= The player is not displaying on the page where I added the code =
 
-Yes. Its designed to work on all major browsers, both PC & Mac, and on mobile devices including iPhone/iPad.
+When the player doesn't show up at all it is most likely either a Mime type issue. This can be solved by adding the following lines to your htaccess file:
+AddType audio/ogg ogg
+AddType audio/ogg oga
+AddType video/ogg ogv
+AddType video/mp4 m4v
+
+= It's not working in browser xyz - can you help? =
+
+The plugin is designed to work on all major browsers, both PC & Mac, and on mobile devices including iPhone/iPad. If it's not working for you, try adding the Mime types above to your htaccess file.
+
+= Something wacky is happening for me (eg it breaks site, breaks another plugin, looks crazy and/or doesn't work!) - what's wrong with it? =
+
+The most common problem is a jQuery conflict. In short, if your theme loads jQuery library, then other plugin/s (like this one) also load jQuery then it can cause serious grief on the site and things start breaking. The solution is for all plugin developers and WordPress theme creators to use the copy of jQuery which is included in the WordPress core or load it from Google AJAX libraries, and to consider also using the noConflict jQuery mode (this plugin does all that). If you're having jQuery conflict problems on your site then the most likely culprit it your theme. [Read this article](http://digwp.com/2009/06/including-jquery-in-wordpress-the-right-way/) by Chris Coyier which explains the issue in more detail and outlines how you can fix it. You might also like to check out suggestions from [Eric Martin](http://www.ericmmartin.com/5-tips-for-using-jquery-with-wordpress/) on the topic.
 
 = Is there a way to easliy replace the 'Buy' button with 'Download' button? =
 
@@ -71,7 +83,7 @@ Yep, sure can. This plugin is just a WordPress version of HTML5 Music Player by 
 
 = Where can I get support for this plugin? =
 
-If you've tried all the obvious stuff and it's still not working please request support via the forum.
+If you've tried all the obvious stuff and it's still not working please request support via the forum. Remember to include a link to your site where the player is embedded, and a full description of the issue plus the steps you've already taken to try to solve it.
 
 
 == Screenshots ==
