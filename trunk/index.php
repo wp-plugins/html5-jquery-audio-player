@@ -5,14 +5,14 @@ Plugin Name: HTML5 jQuery Audio Player
 Plugin URI: http://wordpress.org/extend/plugins/html5-jquery-audio-player/
 Description: The trendiest audio player plugin for WordPress. Works on iPhone/iPad and other mobile devices. Insert with shortcode [hmp_player]
 Author: Enigma Digital
-Version: 1.6
+Version: 1.7
 Author URI: http://enigmaweb.com.au
 */
 
 
 //Database table versions
 global $hmp_player_db_table_version;
-$hmp_player_db_table_version = "1.0";
+$hmp_player_db_table_version = "1.7";
 
 //Create database tables needed by the DiveBook widget
 function hmp_db_create () {
@@ -31,13 +31,13 @@ function hmp_create_table_player(){
             ||  $installed_ver != $hmp_player_db_table_version ) {
         $sql = "CREATE TABLE " . $table_name . " (
               `id` INT( 9 ) NOT NULL AUTO_INCREMENT PRIMARY KEY,
-              `mp3` VARCHAR( 100 ) NOT NULL,
-              `ogg` VARCHAR( 100 ) NOT NULL,
-              `rating` VARCHAR( 10 ) NOT NULL,
-              `title` VARCHAR( 50 ) NOT NULL ,
-              `buy` VARCHAR( 100 ) NOT NULL,
-			  `price` VARCHAR( 50 ) NOT NULL,
-			  `cover` VARCHAR( 100 ) NOT NULL,
+              `mp3` TEXT NOT NULL,
+              `ogg` TEXT NOT NULL,
+              `rating` TEXT NOT NULL,
+              `title` TEXT NOT NULL,
+              `buy` TEXT NOT NULL,
+			  `price` TEXT NOT NULL,
+			  `cover` TEXT NOT NULL,
 			  `duration` VARCHAR( 20 ) NOT NULL,
 			  `artist` VARCHAR( 50 ) NOT NULL,
               UNIQUE KEY id (id)

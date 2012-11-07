@@ -1,5 +1,5 @@
 === HTML5 jQuery Audio Player ===
-Contributors: EnigmaWeb, Base29
+Contributors: EnigmaWeb
 Donate link: http://enigmaweb.com.au
 Tags: mp3 player, audio player, music player, ogg player, HTML5 audio player, mp3, podcast, jquery player
 Requires at least: 3.1
@@ -17,20 +17,26 @@ This trendy looking music player lets you add a single audio track or a full pla
 = Key Features =
 
 *	Supports mp3 and ogg file formats
-*   Attractive design with customisable colours
+*   Attractive and customisable design
 *	HTML5 based player with Flash backup 
 *   Works in all major browsers - IE7, IE8, IE9, Safari, Firefox, Chrome
 *   Works on mobile devices including iPhone/iPad
 *   Can enable Buy or Download tracks button - [tutorial here](http://www.enigmaweb.com.au/fetchapp-integration-tutorial/)
 *	Add the player to any post/page using shortcode `[hmp_player]`
 
-= Pro vs Lite Version =
-
-This is Lite (free) version of the plugin. But Pro Version is now [available here](http://www.enigmaweb.com.au/plugins/html5-jquery-audio-pro/) Pro version includes a small number of advanced features such as the ability to add multiple playlists and AJAX admin input forms. More features will continue to be added.
-
 = Demo =
 
 [Click here for demo](http://www.galaxybrass.com.au/audio-demo/)
+
+= Pro vs Lite Version =
+
+This is Lite (free) version of the plugin. [Get Pro Version](http://www.enigmaweb.com.au/plugins/html5-jquery-audio-pro/) if you need the following advanced features:
+
+*	Mulitple Playlists - create as many playlists as you like and embed any number of players in your site.
+*	Drag n Drop playlist manager so you can order tracks
+*	Enhanced admin area including smart AJAX input forms
+*	More customisation control - adjust player width, choose whether to display ratings/artwork and more.
+*	Add up to 3 buy/download buttons so you can sell your music in several places (eg iTunes, BandCamp, etc)
 
 = Credits =
 
@@ -93,6 +99,9 @@ If you've tried all the obvious stuff and it's still not working please request 
 
 == Changelog ==
 
+= 1.7 =
+* Fixed URL truncating plus some other small enhancements
+
 = 1.6 =
 * Fixed several small issues. You can now use apostrophe in description field without it breaking the player, and removed character limits on various input fields. Display issue for long playlists also corrected.
 
@@ -115,6 +124,9 @@ If you've tried all the obvious stuff and it's still not working please request 
 * Initial release
 
 == Upgrade Notice ==
+
+= 1.7 =
+* Fixed URL truncating plus some other small enhancements
 
 = 1.6 =
 * Fixed several small issues. You can now use apostrophe in description field without it breaking the player, and removed character limits on various input fields. Display issue for long playlists also corrected.
