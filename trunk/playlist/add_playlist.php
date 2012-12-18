@@ -425,7 +425,7 @@ $uresults 	= 	$wpdb->get_row( $usql  );
     <?php
 		$sql		=	"SELECT * FROM $table";
 
-		$results 	= 	$wpdb->get_results( $wpdb->prepare( $sql ) );
+		$results 	= 	$wpdb->get_results( $sql );
 	?>
 	<?php if( !empty( $results ) ) : ?>
     <?php foreach( $results as $result ): ?>
@@ -433,8 +433,8 @@ $uresults 	= 	$wpdb->get_row( $usql  );
         <td><?php echo $result->title; ?></td>
         <td width="25%"><?php echo $result->artist; ?></td>
         <td width="10%"><?php echo $result->price; ?></td>
-         <td width="10%"><?php echo $result->rating; ?></td>
-          <td width="10%"><?php echo $result->duration; ?></td>
+        <td width="10%"><?php echo $result->rating; ?></td>
+        <td width="10%"><?php echo $result->duration; ?></td>
         <td width="10%"><a href="<?php bloginfo('url'); ?>/wp-admin/admin.php?page=hmp_palylist&action=update&id=<?php echo $result->id; ?>">Update</a></td>
         <td width="10%"><a href="<?php bloginfo('url'); ?>/wp-admin/admin.php?page=hmp_palylist&action=delete&id=<?php echo $result->id; ?>">Delete</a></td>
 	</tr>
