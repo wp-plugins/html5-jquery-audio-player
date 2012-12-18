@@ -3,7 +3,7 @@ Contributors: EnigmaWeb
 Donate link: http://enigmaweb.com.au
 Tags: mp3 player, audio player, music player, ogg player, HTML5 audio player, mp3, podcast, jquery player
 Requires at least: 3.1
-Tested up to: 3.4.2
+Tested up to: 3.5
 Stable tag: trunk
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
@@ -35,7 +35,7 @@ This is Lite (free) version of the plugin. [Get Pro Version](http://www.enigmawe
 *	Mulitple Playlists - create as many playlists as you like and embed any number of players in your site.
 *	Drag n Drop playlist manager so you can order tracks
 *	Enhanced admin area including smart AJAX input forms
-*	More customisation control - adjust player width, choose whether to display ratings/artwork and more.
+*	More customisation control - adjust player width, choose whether to display ratings, artwork and more.
 *	Add up to 3 buy/download buttons so you can sell your music in several places (eg iTunes, BandCamp, etc)
 
 = Credits =
@@ -99,6 +99,9 @@ If you've tried all the obvious stuff and it's still not working please request 
 
 == Changelog ==
 
+= 1.8 =
+* Implemented fixes so the plugin is now compatible with WordPress Core 3.5
+
 = 1.7 =
 * Fixed URL truncating plus some other small enhancements
 
@@ -124,6 +127,9 @@ If you've tried all the obvious stuff and it's still not working please request 
 * Initial release
 
 == Upgrade Notice ==
+
+= 1.8 =
+* Implemented fixes so the plugin is now compatible with WordPress Core 3.5.  Upgrade crutial if you want to run 3.5
 
 = 1.7 =
 * Fixed URL truncating plus some other small enhancements
