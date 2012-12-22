@@ -35,7 +35,7 @@ This is Lite (free) version of the plugin. [Get Pro Version](http://www.enigmawe
 *	Mulitple Playlists - create as many playlists as you like and embed any number of players in your site.
 *	Drag n Drop playlist manager so you can order tracks
 *	Enhanced admin area including smart AJAX input forms
-*	More customisation control - adjust player width, choose whether to display ratings, artwork and more.
+*	More customisation control - adjust player width, choose whether to display ratings/artwork and more.
 *	Add up to 3 buy/download buttons so you can sell your music in several places (eg iTunes, BandCamp, etc)
 
 = Credits =
@@ -99,6 +99,9 @@ If you've tried all the obvious stuff and it's still not working please request 
 
 == Changelog ==
 
+= 1.9 =
+* More fixes for WordPress Core 3.5. Fixed issue with 'add media' button disappearing. Fixed problem where player was preventing some widgets opening.
+
 = 1.8 =
 * Implemented fixes so the plugin is now compatible with WordPress Core 3.5
 
@@ -128,8 +131,11 @@ If you've tried all the obvious stuff and it's still not working please request 
 
 == Upgrade Notice ==
 
+= 1.9 =
+* More fixes for WordPress Core 3.5. Fixed issue with 'add media' button disappearing. Fixed problem where player was preventing some widgets opening.
+
 = 1.8 =
-* Implemented fixes so the plugin is now compatible with WordPress Core 3.5.  Upgrade crutial if you want to run 3.5
+* Implemented fixes so the plugin is now compatible with WordPress Core 3.5
 
 = 1.7 =
 * Fixed URL truncating plus some other small enhancements
