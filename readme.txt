@@ -99,6 +99,9 @@ If you've tried all the obvious stuff and it's still not working please request 
 
 == Changelog ==
 
+= 1.9.1 =
+* Minor fix in index.php to prevent jQuery conflict
+
 = 1.9 =
 * More fixes for WordPress Core 3.5. Fixed issue with 'add media' button disappearing. Fixed problem where player was preventing some widgets opening.
 
@@ -130,6 +133,9 @@ If you've tried all the obvious stuff and it's still not working please request 
 * Initial release
 
 == Upgrade Notice ==
+
+= 1.9.1 =
+* Minor fix in index.php to prevent jQuery conflict
 
 = 1.9 =
 * More fixes for WordPress Core 3.5. Fixed issue with 'add media' button disappearing. Fixed problem where player was preventing some widgets opening.
