@@ -91,11 +91,10 @@ Yes! Set the buy text option to Download, leave currency field & song price fiel
 Yep, sure can. This plugin is just a WordPress version of HTML5 Music Player by Saleem over at [Codebase Hero](http://www.codebasehero.com/2011/06/html-music-player/)
 
 = Are there any known bugs? =
-Sorry, any plugin is a work in progress. I'm working to fix the known issues below as soon as possible
+Yes sorry, any plugin is a work in progress - I'm working to fix the following known issues as soon as possible
 * Conflict with Jetpack plugin
 * Conflict with WordPress SEO plugin
 * PRO Version - Problem with adding more than one player to the same page/post for some users
-
 
 = What features are being added soon? =
 * Other language support

@@ -11,9 +11,6 @@ Author URI: http://enigmaweb.com.au
 
 //function add script
 
-
-
-
 require 'includes/db-settings.php';
 register_activation_hook( __FILE__, 'hmp_db_create' );
 add_action( 'admin_menu', 'my_plugin_menu' );
@@ -24,7 +21,6 @@ function my_plugin_menu() {
 	add_submenu_page( 'hmp-options', 'Manage Songs', 'Manage Songs', 'manage_options', 'hmp_palylist', 'wp_hmp_playlist' );
 	
 }
-
 
 add_action( 'admin_init', 'register_mysettings' );
 
