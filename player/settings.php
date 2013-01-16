@@ -42,7 +42,7 @@
                 </thead>
                 <tbody>
                 	<tr>
-                    	<td style="border:0;">Upgrade to Pro Version for advanced features like multiple playlist function<br /><a href="http://www.enigmaweb.com.au/plugins/html5-jquery-audio-pro" target="_blank">View Details</a></td>
+                    	<td style="border:0;">Upgrade to Pro Version for advanced features like multiple playlist function, sidebar widget, more customisation control, song order drag and drop and more<br /><a href="http://www.enigmaweb.com.au/plugins/html5-jquery-audio-pro" target="_blank">View Details</a></td>
                     </tr>
                    
                 </tbody>
@@ -77,6 +77,10 @@
       <tr valign="top">
         <th scope="row"><strong>Show Track List</strong></th>
         <td>Yes <input id="rd3" type="radio" name="showlist" value="1" <?php  if(get_option('showlist')==1){ echo 'checked="checked"';} ?> />  No <input id="rd4" type="radio" name="showlist" value="0" <?php  if(get_option('showlist')==0){ echo 'checked="checked"';} ?> /></td>
+      </tr>
+        <tr valign="top">
+        <th scope="row"><strong>Auto Play</strong></th>
+        <td>Yes <input id="rd3" type="radio" name="autoplay" value="1" <?php  if(get_option('autoplay')==1){ echo 'checked="checked"';} ?> />  No <input id="rd4" type="radio" name="autoplay" value="0" <?php  if(get_option('autoplay')==0){ echo 'checked="checked"';} ?> /></td>
         </tr>
         <tr valign="top">
         <th scope="row"><strong>Number Of Tracks</strong></th>

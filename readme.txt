@@ -22,6 +22,8 @@ This trendy looking music player lets you add a single audio track or a full pla
 *   Works in all major browsers - IE7, IE8, IE9, Safari, Firefox, Chrome
 *   Works on mobile devices including iPhone/iPad
 *   Can enable Buy or Download tracks button - [tutorial here](http://www.enigmaweb.com.au/fetchapp-integration-tutorial/)
+*	Autoplay on/off option
+*	User ratings on/off option
 *	Add the player to any post/page using shortcode `[hmp_player]`
 
 = Demo =
@@ -35,8 +37,9 @@ This is Lite (free) version of the plugin. [Get Pro Version](http://www.enigmawe
 *	Mulitple Playlists - create as many playlists as you like and embed any number of players in your site.
 *	Drag n Drop playlist manager so you can order tracks
 *	Enhanced admin area including smart AJAX input forms
-*	More customisation control - adjust player width, choose whether to display ratings/artwork and more.
+*	More customisation control - adjust player width, choose whether to display ratings, artwork and more.
 *	Add up to 3 buy/download buttons so you can sell your music in several places (eg iTunes, BandCamp, etc)
+*	Display the player in a sidebar using a widget
 
 = Credits =
 
@@ -59,9 +62,9 @@ The plugin supports mp3 and ogg files. You need to upload both an mp3 and ogg ve
 
 There are heaps of free conversion tools available - run a search. Personally, I use [Goldwave.](http://www.goldwave.com/)
 
-= The player is not displaying on the page where I added the code =
+= The songs won't play =
 
-When the player doesn't show up at all it is most likely a Mime type issue. This can be solved by adding the following lines to your htaccess file:
+If the play button flashes then goes back to pause then this is likely a Mime type issue. Particularly affects Firefox. It can be solved by adding the following lines to your htaccess file:
 `AddType audio/ogg ogg
 AddType audio/ogg oga
 AddType video/ogg ogv
@@ -87,6 +90,18 @@ Yes! Set the buy text option to Download, leave currency field & song price fiel
 
 Yep, sure can. This plugin is just a WordPress version of HTML5 Music Player by Saleem over at [Codebase Hero](http://www.codebasehero.com/2011/06/html-music-player/)
 
+= Are there any known bugs? =
+Yes sorry, any plugin is a work in progress - I'm working to fix the following known issues as soon as possible:
+* Conflict with Jetpack plugin
+* Conflict with WordPress SEO plugin
+* PRO Version - Problem with adding more than one player to the same page/post for some users
+
+= What features are being added soon? =
+* Other language support
+* Import/export csv playlist function
+* On/off button for Artist field
+* Upload media button for mp3/ogg url fields
+
 = Where can I get support for this plugin? =
 
 If you've tried all the obvious stuff and it's still not working please request support via the forum. Remember to include a link to your site where the player is embedded, and a full description of the issue plus the steps you've already taken to try to solve it.
@@ -98,6 +113,10 @@ If you've tried all the obvious stuff and it's still not working please request 
 2. The display settings screen in WP-Admin
 
 == Changelog ==
+
+= 2.0 =
+* Added auto-play on/off option in display settings
+* Integrated a more advanced user rating system - rating is now based on accumulated average user rating rather than it being something the site owner sets in backend
 
 = 1.9.1 =
 * Minor fix in index.php to prevent jQuery conflict
@@ -133,6 +152,10 @@ If you've tried all the obvious stuff and it's still not working please request 
 * Initial release
 
 == Upgrade Notice ==
+
+= 2.0 =
+* Added auto-play on/off option in display settings
+* Integrated a more advanced user rating system - rating is now based on accumulated average user rating rather than it being something the site owner sets in backend
 
 = 1.9.1 =
 * Minor fix in index.php to prevent jQuery conflict
