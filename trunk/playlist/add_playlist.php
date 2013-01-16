@@ -174,7 +174,7 @@ $uresults 	= 	$wpdb->get_row( $usql  );
                 </thead>
                 <tbody>
                 	<tr>
-                    	<td style="border:0;">Upgrade to Pro Version for advanced features like multiple playlist function<br /><a href="http://www.enigmaweb.com.au/plugins/html5-jquery-audio-pro" target="_blank">View Details</a></td>
+                    	<td style="border:0;">Upgrade to Pro Version for advanced features like multiple playlist function, sidebar widget, more customisation control, song order drag and drop and more<br /><a href="http://www.enigmaweb.com.au/plugins/html5-jquery-audio-pro" target="_blank">View Details</a></td>
                     </tr>
                    
                 </tbody>

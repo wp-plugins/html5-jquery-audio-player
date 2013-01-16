@@ -374,6 +374,11 @@
     width: 0;
     height: 0;
 }
+.rating-succes{
+	display: inline-block;
+	width: 100px;
+	color: white;	
+}
 
 
 

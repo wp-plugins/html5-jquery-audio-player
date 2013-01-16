@@ -43,7 +43,7 @@
             currencySymbol:'$',
             buyText:'BUY',
             tracksToShow:5,
-            autoPlay:false,
+            autoplay:false,
             jPlayer:{}
         };
 
@@ -78,7 +78,6 @@
                 listItem:'<li class="track">' +
                             '<span class="title"></span>' +
                             '<span class="duration"></span>' +
-                            '<span class="rating"></span>' +
                             '<a href="#" class="buy not-active" target="_blank"></a>' +
                         '</li>',
                 ratingBar:'<span class="rating-level rating-bar"></span>'
@@ -391,6 +390,7 @@
                         '                <span class="rating-level rating-star on"></span>' +
                         '                <span class="rating-level rating-star on"></span>' +
                         '                <span class="rating-level rating-star"></span>' +
+						'				 <span class="rating-succes">Already rated</span>' +
                         '            </div>' +
                         '        </div>' +
                         '        <div class="player-controls">' +
