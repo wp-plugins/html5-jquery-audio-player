@@ -52,6 +52,8 @@ This is a WordPress version of the player created by Saleem over at [Codebase He
 1. Configure the plugin by going to the `HTML5 Audio Player` menu that appears in your admin menu
 1. Add the player to any post/page using shortcode `[hmp_player]`
 
+
+
 == Frequently Asked Questions ==
 
 = I'm having problems adding mp3 files - they won't play. =
@@ -78,6 +80,9 @@ The plugin is designed to work on all major browsers, both PC & Mac, and on mobi
 
 The most common problem is a jQuery conflict. In short, if your theme loads jQuery library, then other plugin/s (like this one) also load jQuery then it can cause serious grief on the site and things start breaking. The solution is for all plugin developers and WordPress theme creators to use the copy of jQuery which is included in the WordPress core or load it from Google AJAX libraries, and to consider also using the noConflict jQuery mode (this plugin does all that). If you're having jQuery conflict problems on your site then the most likely culprit it your theme. [Read this article](http://digwp.com/2009/06/including-jquery-in-wordpress-the-right-way/) by Chris Coyier which explains the issue in more detail and outlines how you can fix it. You might also like to check out suggestions from [Eric Martin](http://www.ericmmartin.com/5-tips-for-using-jquery-with-wordpress/) on the topic.
 
+= How do I use it in a widget? =
+Pro Version has a nice widget function - go to Appearance > Widgets and if the plugin is activated you will see a custom widget which you can drag into your sidebar. Be aware that you can't run two instances of the player on the same page, so if you're using it in the sidebar make sure you don't also add a different player to a page where the sidebar shows.
+
 = Is there a way to easliy replace the 'Buy' button with 'Download' button? =
 
 Yes! Set the buy text option to Download, leave currency field & song price field blank, and set the buy link option on each song to the url of the mp3 or the script that initiates the download.
@@ -91,7 +96,6 @@ Yes! Set the buy text option to Download, leave currency field & song price fiel
 Yep, sure can. This plugin is just a WordPress version of HTML5 Music Player by Saleem over at [Codebase Hero](http://www.codebasehero.com/2011/06/html-music-player/)
 
 = Are there any known bugs? =
-Yes sorry, any plugin is a work in progress - I'm working to fix the following known issues as soon as possible
 * Conflict with Jetpack plugin
 * Conflict with WordPress SEO plugin
 * PRO Version - Problem with adding more than one player to the same page/post for some users
