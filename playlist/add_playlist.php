@@ -194,13 +194,13 @@ $uresults 	= 	$wpdb->get_row( $usql  );
         </tr><form name="addplaylist" action="" method="post" enctype="multipart/form-data">
         <tr valign="top">
         <th scope="row"><strong>MP3 Link update</strong></th>
-        <td width="25%"><input type="text" size="50" name="mp3" value="<?php echo $uresults->mp3 ; ?>" /></td>
+        <td width="29%"><input type="text" size="50" name="mp3" value="<?php echo $uresults->mp3 ; ?>" class="upload-url" /><input id="st_upload_button" class="st_upload_button" type="button" name="upload_button" value="Upload" style="background: white;border: solid 1px #CCC;cursor: pointer;"></td>
         <td><span style="font-size:11px; color:#b2b2b2; font-style:italic;"><strong>Required</strong> Full File Path of mp3 file</span></td>
         
         </tr>
         <tr valign="top">
         <th scope="row"><strong>Ogg Link</strong></th>
-        <td><input type="text" size="50" name="ogg" value="<?php echo $uresults->ogg ; ?>" /></td>
+        <td><input type="text" size="50" name="ogg" value="<?php echo $uresults->ogg ; ?>" class="upload-url" /><input id="st_upload_button" class="st_upload_button" type="button" name="upload_button" value="Upload" style="background: white;border: solid 1px #CCC;cursor: pointer;"></td>
         <td><span style="font-size:11px; color:#b2b2b2; font-style:italic;"><strong>Required</strong> Full File Path of ogg file</span></td>
         </tr>
         <tr valign="top">
@@ -225,7 +225,7 @@ $uresults 	= 	$wpdb->get_row( $usql  );
         </tr>
         <tr valign="top">
         <th scope="row"><strong>Cover Image</strong></th>
-        <td><input type="text" size="50" name="cover" value="<?php echo $uresults->cover ; ?>" /></td>
+        <td><input type="text" size="50" name="cover" value="<?php echo $uresults->cover ; ?>" class="upload-url" /><input id="st_upload_button" class="st_upload_button" type="button" name="upload_button" value="Upload" style="background: white;border: solid 1px #CCC;cursor: pointer;"></td>
         <td><span style="font-size:11px; color:#b2b2b2; font-style:italic;"><strong>Required</strong> Full File Path to cover image ( 125*125 )</span></td>
         </tr>
         <tr valign="top">
@@ -335,13 +335,13 @@ $uresults 	= 	$wpdb->get_row( $usql  );
         <form name="addplaylist" action="" method="post" enctype="multipart/form-data">
         <tr valign="top">
         <th scope="row"><strong>MP3 Link</strong></th>
-        <td width="25%"><input type="text" size="50" name="mp3" /></td>
+        <td width="29%"><input type="text" size="50" name="mp3" class="upload-url" /><input id="st_upload_button" class="st_upload_button" type="button" name="upload_button" value="Upload" style="background: white;border: solid 1px #CCC;cursor: pointer;"></td>
         <td><span style="font-size:11px; color:#b2b2b2; font-style:italic;"><strong>Required</strong> Full File Path of mp3 file</span></td>
          
         </tr>
         <tr valign="top">
         <th scope="row"><strong>Ogg Link</strong></th>
-        <td><input type="text" size="50" name="ogg" /></td>
+        <td><input type="text" size="50" name="ogg" class="upload-url" /><input id="st_upload_button" class="st_upload_button" type="button" name="upload_button" value="Upload" style="background: white;border: solid 1px #CCC;cursor: pointer;"></td>
         <td><span style="font-size:11px; color:#b2b2b2; font-style:italic;"><strong>Required</strong> Full File Path of ogg file</span></td>
         </tr>
         <tr valign="top">
@@ -366,7 +366,7 @@ $uresults 	= 	$wpdb->get_row( $usql  );
         </tr>
         <tr valign="top">
         <th scope="row"><strong>Cover Image</strong></th>
-        <td><input type="text" size="50" name="cover" /></td>
+        <td><input type="text" size="50" name="cover" class="upload-url" /><input id="st_upload_button" class="st_upload_button" type="button" name="upload_button" value="Upload" style="background: white;border: solid 1px #CCC;cursor: pointer;"></td>
         <td><span style="font-size:11px; color:#b2b2b2; font-style:italic;"><strong>Required</strong> Full File Path to cover image ( 125*125 )</span></td>
         </tr>
         <tr valign="top">

@@ -3,7 +3,7 @@ Contributors: EnigmaWeb
 Donate link: http://enigmaweb.com.au
 Tags: mp3 player, audio player, music player, ogg player, HTML5 audio player, mp3, podcast, jquery player
 Requires at least: 3.1
-Tested up to: 3.5
+Tested up to: 3.5.1
 Stable tag: trunk
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
@@ -23,7 +23,7 @@ This trendy looking music player lets you add a single audio track or a full pla
 *   Works on mobile devices including iPhone/iPad
 *   Can enable Buy or Download tracks button - [tutorial here](http://www.enigmaweb.com.au/fetchapp-integration-tutorial/)
 *	Autoplay on/off option
-*	User ratings on/off option
+*	User star ratings
 *	Add the player to any post/page using shortcode `[hmp_player]`
 
 = Demo =
@@ -56,6 +56,14 @@ This is a WordPress version of the player created by Saleem over at [Codebase He
 
 == Frequently Asked Questions ==
 
+= It doesn't work for me, this plugin sucks! =
+
+Actually it does... and tens of thousands of users agree. If you're having a problem it is highly likely that it is one of the common issues below. Please take the time to read these FAQs and try the steps suggested. If you're still having problems you can get support in the forum. Be nice, and explain your issue properly so I can try to help you. Thank you.
+
+= jQuery Conflict (It's breaking my site) =
+
+The most common problem is a jQuery conflict. In short, if your theme loads jQuery library, then other plugin/s (like this one) also load jQuery then it can cause serious grief on the site and things start breaking. The solution is for all plugin developers and WordPress theme creators to use the copy of jQuery which is included in the WordPress core or load it from Google AJAX libraries, and to consider also using the noConflict jQuery mode (this plugin does all that). If you're having jQuery conflict problems on your site then the most likely culprit it your theme. [Read this article](http://digwp.com/2009/06/including-jquery-in-wordpress-the-right-way/) by Chris Coyier which explains the issue in more detail and outlines how you can fix it. You might also like to check out suggestions from [Eric Martin](http://www.ericmmartin.com/5-tips-for-using-jquery-with-wordpress/) on the topic.
+
 = I'm having problems adding mp3 files - they won't play. =
 
 The plugin supports mp3 and ogg files. You need to upload both an mp3 and ogg version of each track in the playlist. Please also check your files are encoded correctly, and confirm that your file paths are correct. jPlayer sometimes has problems with relative urls so make sure you're using the absolute paths.
@@ -64,9 +72,13 @@ The plugin supports mp3 and ogg files. You need to upload both an mp3 and ogg ve
 
 There are heaps of free conversion tools available - run a search. Personally, I use [Goldwave.](http://www.goldwave.com/)
 
+= I need ogg? Waaaa! =
+
+Yeah you really do. Having both the ogg and mp3 is what enables this plugin to work on all the different browsers and devices. You can use a converter to make an ogg copy of your files fast and free and you can batch process with most tools so please don't complain about needing ogg.
+
 = The songs won't play =
 
-If the play button flashes then goes back to pause then this is likely a Mime type issue. Particularly affects Firefox. It can be solved by adding the following lines to your htaccess file:
+Are you in firefox? If the play button flashes then goes back to pause then this is likely a Mime type issue. Particularly affects Firefox. It can be solved by adding the following lines to your htaccess file:
 `AddType audio/ogg ogg
 AddType audio/ogg oga
 AddType video/ogg ogv
@@ -74,11 +86,7 @@ AddType video/mp4 m4v`
 
 = It's not working in browser xyz - can you help? =
 
-The plugin is designed to work on all major browsers, both PC & Mac, and on mobile devices including iPhone/iPad. If it's not working for you, try adding the Mime types above to your htaccess file.
-
-= Something wacky is happening for me (eg it breaks site, breaks another plugin, looks crazy and/or doesn't work!) - what's wrong with it? =
-
-The most common problem is a jQuery conflict. In short, if your theme loads jQuery library, then other plugin/s (like this one) also load jQuery then it can cause serious grief on the site and things start breaking. The solution is for all plugin developers and WordPress theme creators to use the copy of jQuery which is included in the WordPress core or load it from Google AJAX libraries, and to consider also using the noConflict jQuery mode (this plugin does all that). If you're having jQuery conflict problems on your site then the most likely culprit it your theme. [Read this article](http://digwp.com/2009/06/including-jquery-in-wordpress-the-right-way/) by Chris Coyier which explains the issue in more detail and outlines how you can fix it. You might also like to check out suggestions from [Eric Martin](http://www.ericmmartin.com/5-tips-for-using-jquery-with-wordpress/) on the topic.
+The plugin is designed to work on all major browsers, both PC & Mac, and on mobile devices including iPhone/iPad. If it's not working for you, try adding the Mime types above to your htaccess file. If it's still not working, the most common problem is jQuery conflict with your theme or another plugin - see above.
 
 = How do I use it in a widget? =
 Pro Version has a nice widget function - go to Appearance > Widgets and if the plugin is activated you will see a custom widget which you can drag into your sidebar. Be aware that you can't run two instances of the player on the same page, so if you're using it in the sidebar make sure you don't also add a different player to a page where the sidebar shows.
@@ -104,7 +112,6 @@ Yep, sure can. This plugin is just a WordPress version of HTML5 Music Player by 
 * Other language support
 * Import/export csv playlist function
 * On/off button for Artist field
-* Upload media button for mp3/ogg url fields
 
 = Where can I get support for this plugin? =
 
@@ -117,6 +124,9 @@ If you've tried all the obvious stuff and it's still not working please request 
 2. The display settings screen in WP-Admin
 
 == Changelog ==
+
+= 2.1 =
+* Added upload button for add/manage songs screen 
 
 = 2.0 =
 * Added auto-play on/off option in display settings
@@ -156,6 +166,9 @@ If you've tried all the obvious stuff and it's still not working please request 
 * Initial release
 
 == Upgrade Notice ==
+
+= 2.1 =
+* Added upload button for add/manage songs screen 
 
 = 2.0 =
 * Added auto-play on/off option in display settings
