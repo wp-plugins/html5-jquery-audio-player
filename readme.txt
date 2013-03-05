@@ -58,7 +58,7 @@ This is a WordPress version of the player created by Saleem over at [Codebase He
 
 = It doesn't work for me, this plugin sucks! =
 
-Actually it does... and tens of thousands of users agree. If you're having a problem it is highly likely that it is one of the common issues below. Please take the time to read these FAQs and try the steps suggested. If you're still having problems you can get support in the forum. Be nice, and explain your issue properly so I can try to help you. Thank you.
+Actually it does work... and tens of thousands of people use it successfully. If you're having a problem it is highly likely that it is one of the common issues below. Please take the time to read these FAQs and try the steps suggested. If you're still having problems you can get support in the forum. Be nice, and explain your issue properly so I can try to help you. Thank you.
 
 = jQuery Conflict (It's breaking my site) =
 
