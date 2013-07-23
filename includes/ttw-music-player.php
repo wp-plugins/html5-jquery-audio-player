@@ -329,7 +329,7 @@
 					//alert(postdata1);
 					jQuery.ajax({
 						type:'POST',
-						url:'<?php echo get_option('siteurl') . '/wp-admin/admin-ajax.php' ?>',
+						url:ajaxurl,
 						cache:false,
 						data: postdata1,
 						beforeSend:function(){
