@@ -61,11 +61,14 @@
          </td>
         </tr><form method="post" action="options.php">
     <?php settings_fields( 'baw-settings-group' ); ?>
+        
+        <!-- 
         <tr valign="top">
         <th scope="row"><strong>Description</strong></th>
         <td><textarea rows="4" cols="52" name="hmp_description"><?php echo get_option('hmp_description'); ?></textarea></td>
+        </tr> 
+        -->
         
-        </tr>
          <tr valign="top">
         <th scope="row"><strong>Show Buy Text</strong></th>
         <td>Yes <input id="rd1" type="radio" name="showbuy" value="1" <?php  if(get_option('showbuy')==1){ echo 'checked="checked"';} ?> />  No <input id="rd0" type="radio" name="showbuy" value="0" <?php  if(get_option('showbuy')==0){ echo 'checked="checked"';} ?> /></td>

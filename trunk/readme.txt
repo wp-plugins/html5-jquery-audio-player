@@ -3,7 +3,7 @@ Contributors: EnigmaWeb
 Donate link: https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=CEJ9HFWJ94BG4
 Tags: mp3 player, audio player, music player, ogg player, HTML5 audio player, mp3, podcast, jquery player
 Requires at least: 3.1
-Tested up to: 3.5.1
+Tested up to: 3.5.2
 Stable tag: trunk
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
@@ -19,7 +19,7 @@ This trendy looking music player lets you add a single audio track or a full pla
 *	Supports mp3 and ogg file formats
 *   Attractive and customisable design
 *	HTML5 based player with Flash backup 
-*   Works in all major browsers - IE7, IE8, IE9, Safari, Firefox, Chrome
+*   Works in all major browsers - IE7-10, Safari, Firefox, Chrome
 *   Works on mobile devices including iPhone/iPad
 *   Can enable Buy or Download tracks button - [tutorial here](http://www.enigmaweb.com.au/fetchapp-integration-tutorial/)
 *	Autoplay on/off option
@@ -103,11 +103,6 @@ Yes! Set the buy text option to Download, leave currency field & song price fiel
 
 Yep, sure can. This plugin is just a WordPress version of HTML5 Music Player by Saleem over at [Codebase Hero](http://www.codebasehero.com/2011/06/html-music-player/)
 
-= Are there any known bugs? =
-* Conflict with Jetpack plugin
-* Conflict with WordPress SEO plugin
-* PRO Version - Problem with adding more than one player to the same page/post for some users
-
 = What features are being added soon? =
 * Other language support
 * Import/export csv playlist function
@@ -124,6 +119,15 @@ If you've tried all the obvious stuff and it's still not working please request 
 2. The display settings screen in WP-Admin
 
 == Changelog ==
+
+= 2.2 =
+* Major code clean up
+* Fixed conflict with NextGen Gallery
+* Fixed conflict with Easy Slider Lite
+* Fixed conflict with JetPack
+* Fixed limit track issue
+* Fixed track order bug
+* Playlist description field removed 
 
 = 2.1 =
 * Added upload button for add/manage songs screen 
@@ -166,6 +170,15 @@ If you've tried all the obvious stuff and it's still not working please request 
 * Initial release
 
 == Upgrade Notice ==
+
+= 2.2 =
+* Major code clean up
+* Fixed conflict with NextGen Gallery
+* Fixed conflict with Easy Slider Lite
+* Fixed conflict with JetPack
+* Fixed limit track issue
+* Fixed track order bug
+* Playlist description field removed > Special characters in this field were breaking the plugin and various work-arounds were unsuccessful. It was causing too many support issues so have decided to remove the field entirely. Apologies to anyone who was using it - you'll just have to work around it by putting description text directly into the editor above or below the player.
 
 = 2.1 =
 * Added upload button for add/manage songs screen 
