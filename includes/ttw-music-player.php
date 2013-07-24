@@ -429,7 +429,6 @@
                         '            </div>' +
                         '        </div>' +
                         '    </div>' +
-                        '    <p class="description"></p>' +
                         '    <div class="tracklist">' +
                         '        <ol class="tracks"> </ol>' +
                         '        <div class="more">View More...</div>' +

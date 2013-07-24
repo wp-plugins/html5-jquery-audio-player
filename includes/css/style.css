@@ -226,6 +226,7 @@
     background: transparent url(../images/tracklist-bg.png) repeat 0 0 scroll;
     /*color: #999;*/
     font-size: 12px;
+	margin-top: 30px;
 }
 
 .ttw-music-player .tracklist ol {
