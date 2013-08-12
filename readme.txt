@@ -8,7 +8,7 @@ Stable tag: trunk
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
-Finally, a trendy looking audio player plugin. Works on all browsers including iPhone/iPad.
+Finally, a trendy looking audio player plugin. Works on all modern browsers including iPhone/iPad.
 
 == Description ==
 
@@ -19,7 +19,7 @@ This trendy looking music player lets you add a single audio track or a full pla
 *	Supports mp3 and ogg file formats
 *   Attractive and customisable design
 *	HTML5 based player with Flash backup 
-*   Works in all major browsers - IE7-10, Safari, Firefox, Chrome
+*   Works in all major browsers - IE9+, Safari, Opera, Firefox, Chrome
 *   Works on mobile devices including iPhone/iPad
 *   Can enable Buy or Download tracks button - [tutorial here](http://www.enigmaweb.com.au/fetchapp-integration-tutorial/)
 *	Autoplay on/off option
@@ -86,10 +86,13 @@ AddType video/mp4 m4v`
 
 = It's not working in browser xyz - can you help? =
 
-The plugin is designed to work on all major browsers, both PC & Mac, and on mobile devices including iPhone/iPad. If it's not working for you, try adding the Mime types above to your htaccess file. If it's still not working, the most common problem is jQuery conflict with your theme or another plugin - see above.
+The plugin works on IE9+, Safari, Opera, Firefox and Chrome, on both PC & Mac, and on mobile devices including iPhone/iPad and Android phones. If it's not working for you, try adding the Mime types above to your htaccess file. If it's still not working, the most common problem is jQuery conflict with your theme or another plugin - see above.
 
 = How do I use it in a widget? =
 Pro Version has a nice widget function - go to Appearance > Widgets and if the plugin is activated you will see a custom widget which you can drag into your sidebar. Be aware that you can't run two instances of the player on the same page, so if you're using it in the sidebar make sure you don't also add a different player to a page where the sidebar shows.
+
+= What happened to the description field? =
+Description field has been deprecated as of version 2.2  This is because it was causing too many support problems (it broke whenever unusual characters/symbols were used) and I could find no viable workaround.
 
 = Is there a way to easliy replace the 'Buy' button with 'Download' button? =
 
