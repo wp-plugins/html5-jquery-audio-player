@@ -79,7 +79,6 @@
 
 .ttw-music-player .player .title {
     /*color: #efefef;*/
-    text-shadow: 0 1px 1px rgba(0, 0, 0, .8);
     font-family: 'Lato Bold', arial, sans-serif;
     font-weight: bold;
     font-size: 14px;
@@ -207,7 +206,6 @@
     margin: 30px 0 0 0;
     font-size: 12px;
     /*color: #999;*/
-    text-shadow: 0 1px 1px rgba(0, 0, 0, .6);
 }
 
 .ttw-music-player .description.showing{
@@ -226,7 +224,6 @@
     background: transparent url(../images/tracklist-bg.png) repeat 0 0 scroll;
     /*color: #999;*/
     font-size: 12px;
-	margin-top: 30px;
 }
 
 .ttw-music-player .tracklist ol {
@@ -236,7 +233,6 @@
 }
 
 .ttw-music-player .tracklist li {
-    text-shadow: 0 1px 1px rgba(0, 0, 0, .6);
     background: transparent url(../images/tracklist-item-bg.png) repeat-x bottom left scroll;
     padding: 10px 0 10px 0;
     list-style-position: inside;
@@ -330,7 +326,6 @@
     font-family: 'Lato Italic', arial, sans-serif;
     font-style: italic;
     font-size: 11px;
-    text-shadow: 0 1px 1px rgba(0, 0, 0, .6);
     padding: 10px 0;
     margin: 10px 0;
     cursor: pointer;

@@ -459,10 +459,9 @@
                 $albumCover.animate({opacity:0}, 'fast', function() {
                     if (!isUndefined(myPlaylist[current].cover)) {
                         var now = current;
-                        $('<img src="' + myPlaylist[current].cover + '" alt="album cover" />', this).imagesLoaded(function(){
+                        
                             if(now == current)
-                                $albumCover.html($(this)).animate({opacity:1})
-                        });
+                                $albumCover.css({opacity:1}).html('<img src="' + myPlaylist[current].cover + '" alt="album cover" />');
                     }
                 });
             }

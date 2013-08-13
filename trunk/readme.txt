@@ -3,7 +3,7 @@ Contributors: EnigmaWeb
 Donate link: https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=CEJ9HFWJ94BG4
 Tags: mp3 player, audio player, music player, ogg player, HTML5 audio player, mp3, podcast, jquery player
 Requires at least: 3.1
-Tested up to: 3.5.2
+Tested up to: 3.6
 Stable tag: trunk
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
@@ -86,7 +86,7 @@ AddType video/mp4 m4v`
 
 = It's not working in browser xyz - can you help? =
 
-The plugin works on IE9+, Safari, Opera, Firefox and Chrome, on both PC & Mac, and on mobile devices including iPhone/iPad and Android phones. If it's not working for you, try adding the Mime types above to your htaccess file. If it's still not working, the most common problem is jQuery conflict with your theme or another plugin - see above.
+The plugin works on IE9+, Safari, Opera, Firefox and Chrome, on both PC & Mac, and on mobile devices including iPhone/iPad and Android phones. If it's not working for you, try adding the Mime types above to your htaccess file. If it's still not working, the most common problem is jQuery conflict with your theme or another plugin - see above. Note that it has limited functionality in earlier version of IE where the html5 <audio> tag is not supported.
 
 = How do I use it in a widget? =
 Pro Version has a nice widget function - go to Appearance > Widgets and if the plugin is activated you will see a custom widget which you can drag into your sidebar. Be aware that you can't run two instances of the player on the same page, so if you're using it in the sidebar make sure you don't also add a different player to a page where the sidebar shows.
@@ -109,7 +109,9 @@ Yep, sure can. This plugin is just a WordPress version of HTML5 Music Player by 
 = What features are being added soon? =
 * Other language support
 * Import/export csv playlist function
-* On/off button for Artist field
+* On/off button for Artist field, Cover Art, and Autorepeat
+* Responsive
+* Integration with Easy Digital Downloads for music sale/distribution
 
 = Where can I get support for this plugin? =
 
@@ -122,6 +124,10 @@ If you've tried all the obvious stuff and it's still not working please request 
 2. The display settings screen in WP-Admin
 
 == Changelog ==
+
+= 2.3 =
+* Fix for album cover artwork in WordPress 3.6
+* Removed drop shadow on text
 
 = 2.2 =
 * Major code clean up
@@ -173,6 +179,10 @@ If you've tried all the obvious stuff and it's still not working please request 
 * Initial release
 
 == Upgrade Notice ==
+
+= 2.3 =
+* Fix for album cover artwork in WordPress 3.6
+* Removed drop shadow on text
 
 = 2.2 =
 * Major code clean up
