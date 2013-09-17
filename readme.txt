@@ -60,6 +60,10 @@ This is a WordPress version of the player created by Saleem over at [Codebase He
 
 Actually it does work... and tens of thousands of people use it successfully. If you're having a problem it is highly likely that it is one of the common issues below. Please take the time to read these FAQs and try the steps suggested. If you're still having problems you can get support in the forum. Be nice, and explain your issue properly so I can try to help you. Thank you.
 
+= Sample player shows instead of my own playlist (Pro Version) =
+
+This indicates a problem with your shortcode. Check for weird characters, symbols or spaces in your playlist title that are generating wrong to the shortcode. Especially check for a space before an underscore in the shortcode.
+
 = jQuery Conflict (It's breaking my site) =
 
 The most common problem is a jQuery conflict. In short, if your theme loads jQuery library, then other plugin/s (like this one) also load jQuery then it can cause serious grief on the site and things start breaking. The solution is for all plugin developers and WordPress theme creators to use the copy of jQuery which is included in the WordPress core or load it from Google AJAX libraries, and to consider also using the noConflict jQuery mode (this plugin does all that). If you're having jQuery conflict problems on your site then the most likely culprit it your theme. [Read this article](http://digwp.com/2009/06/including-jquery-in-wordpress-the-right-way/) by Chris Coyier which explains the issue in more detail and outlines how you can fix it. You might also like to check out suggestions from [Eric Martin](http://www.ericmmartin.com/5-tips-for-using-jquery-with-wordpress/) on the topic.
