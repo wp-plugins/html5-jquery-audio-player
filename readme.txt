@@ -18,8 +18,7 @@ This trendy looking music player lets you add a single audio track or a full pla
 
 *	Supports mp3 and ogg file formats
 *   Attractive and customisable design
-*	HTML5 based player with Flash backup 
-*   Works in all major browsers - IE9+, Safari, Opera, Firefox, Chrome
+*   Cross browser compatible for IE9+, Safari, Opera, Firefox, Chrome
 *   Works on mobile devices including iPhone/iPad
 *   Can enable Buy or Download tracks button - [tutorial here](http://www.enigmaweb.com.au/fetchapp-integration-tutorial/)
 *	Autoplay on/off option
