@@ -6,7 +6,7 @@ add_action( 'wp_enqueue_scripts', 'hmp_script' );
 
 //Database table versions
 global $hmp_player_db_table_version;
-$hmp_player_db_table_version = "2.0";
+$hmp_player_db_table_version = "2.1";
 
 //Create database tables needed by the DiveBook widget
 function hmp_db_create () {
@@ -36,6 +36,7 @@ function hmp_create_table_player(){
 			  `duration` VARCHAR( 20 ) NOT NULL,
 			  `artist` VARCHAR( 50 ) NOT NULL,
 			  `total_votes` INT(5) NOT NULL,
+			  `secure` VARCHAR( 55 ) NOT NULL,
               UNIQUE KEY id (id)
             );";
 

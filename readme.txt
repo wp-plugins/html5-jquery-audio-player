@@ -3,7 +3,7 @@ Contributors: EnigmaWeb
 Donate link: https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=CEJ9HFWJ94BG4
 Tags: mp3 player, audio player, music player, ogg player, HTML5 audio player, mp3, podcast, jquery player
 Requires at least: 3.1
-Tested up to: 3.6
+Tested up to: 3.8
 Stable tag: trunk
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
@@ -16,11 +16,11 @@ This trendy looking music player lets you add a single audio track or a full pla
 
 = Key Features =
 
-*	Supports mp3 and ogg file formats
-*   Attractive and customisable design
-*   Cross browser compatible for IE9+, Safari, Opera, Firefox, Chrome
-*   Works on mobile devices including iPhone/iPad
-*   Can enable Buy or Download tracks button - [tutorial here](http://www.enigmaweb.com.au/fetchapp-integration-tutorial/)
+*	Uses mp3 and ogg file formats
+*Attractive and customisable design
+*Works in all major browsers - IE9+, Safari, Opera, Firefox, Chrome
+*Works on mobile devices including iPhone/iPad
+*Can enable Buy or Download tracks button - [tutorial here](http://www.enigmaweb.com.au/fetchapp-integration-tutorial/)
 *	Autoplay on/off option
 *	User star ratings
 *	Add the player to any post/page using shortcode `[hmp_player]`
@@ -58,10 +58,6 @@ This is a WordPress version of the player created by Saleem over at [Codebase He
 = It doesn't work for me, this plugin sucks! =
 
 Actually it does work... and tens of thousands of people use it successfully. If you're having a problem it is highly likely that it is one of the common issues below. Please take the time to read these FAQs and try the steps suggested. If you're still having problems you can get support in the forum. Be nice, and explain your issue properly so I can try to help you. Thank you.
-
-= Sample player shows instead of my own playlist (Pro Version) =
-
-This indicates a problem with your shortcode. Check for weird characters, symbols or spaces in your playlist title that are generating wrong to the shortcode. Especially check for a space before an underscore in the shortcode.
 
 = jQuery Conflict (It's breaking my site) =
 
@@ -114,7 +110,6 @@ Yep, sure can. This plugin is just a WordPress version of HTML5 Music Player by 
 * Import/export csv playlist function
 * On/off button for Artist field, Cover Art, and Autorepeat
 * Responsive
-* Integration with Easy Digital Downloads for music sale/distribution
 
 = Where can I get support for this plugin? =
 
@@ -127,6 +122,10 @@ If you've tried all the obvious stuff and it's still not working please request 
 2. The display settings screen in WP-Admin
 
 == Changelog ==
+
+
+= 2.4 =
+* Security patches
 
 = 2.3 =
 * Fix for album cover artwork in WordPress 3.6
@@ -182,6 +181,10 @@ If you've tried all the obvious stuff and it's still not working please request 
 * Initial release
 
 == Upgrade Notice ==
+
+
+= 2.4 =
+* Security patches - important to update
 
 = 2.3 =
 * Fix for album cover artwork in WordPress 3.6

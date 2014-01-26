@@ -13,33 +13,44 @@ global $wpdb;
 $table		=	$wpdb->prefix."hmp_playlist"; // add quote marks //
 
 if(isset($_GET['id'])){
-	$id		=	$_GET['id'];
+	$id		=	strip_tags(urlencode($_GET['id']));
 }
 
 
 
 $action		=	"add";
 if(isset($_GET['action'])){
-	$action	=	$_GET['action'];	
+	$action	=	strip_tags(urlencode($_GET['action']));
 }
 
 
+$maxSql = "Select Max(id) As maxId From wp_hmp_playlist";
+$maxQry = mysql_query($maxSql);
+$maxObj = mysql_fetch_object($maxQry);
 
+$maxId = $maxObj->maxId;
+
+(($maxId == "") || ($maxId == NULL) ? $maxId = 0 : $maxId);
+
+$secureId = $maxId + 1;
+
+$md5Secure = md5($secureId);
 
 
 switch($action){
 	
 	case "add";
 		if($_POST['submit']){
-	$mp3		=	$_POST['mp3'];
-	$ogg		=	$_POST['ogg'];
-	$rating		=	$_POST['rating'];
-	$title		=	$_POST['title'];
-	$buy		=	$_POST['buy'];
-	$price		=	$_POST['price'];
-	$cover		=	$_POST['cover'];
-	$duration	=	$_POST['duration'];
-	$artist		=	$_POST['artist'];
+	$mp3		=	strip_tags($_POST['mp3']);
+	$ogg		=	strip_tags($_POST['ogg']);
+	$rating		=	strip_tags($_POST['rating']);
+	$title		=	strip_tags($_POST['title']);
+	$buy		=	strip_tags($_POST['buy']);
+	$price		=	strip_tags($_POST['price']);
+	$cover		=	strip_tags($_POST['cover']);
+	$duration	=	strip_tags($_POST['duration']);
+	$artist		=	strip_tags($_POST['artist']);
+	$secure		=	strip_tags($md5Secure);
 	
 $data	=	array(
 				'ogg' 		=> $ogg,
@@ -50,7 +61,8 @@ $data	=	array(
 				'price' 	=> $price,
 				'cover' 	=> $cover,
 				'duration' 	=> $duration,
-				'artist' 	=> $artist
+				'artist' 	=> $artist,
+				'secure' 	=> $secure
 
 				);
 if(!empty($_POST['mp3']) and !empty($_POST['ogg']) and !empty($_POST['title']) and !empty($_POST['cover'])){
@@ -78,15 +90,15 @@ if(!empty($_POST['mp3']) and !empty($_POST['ogg']) and !empty($_POST['title']) a
 	
 	
 	
-	$mp3		=	$_POST['mp3'];
-	$ogg		=	$_POST['ogg'];
-	$rating		=	$_POST['rating'];
-	$title		=	$_POST['title'];
-	$buy		=	$_POST['buy'];
-	$price		=	$_POST['price'];
-	$cover		=	$_POST['cover'];
-	$duration	=	$_POST['duration'];
-	$artist		=	$_POST['artist'];
+	$mp3		=	strip_tags($_POST['mp3']);
+	$ogg		=	strip_tags($_POST['ogg']);
+	$rating		=	strip_tags($_POST['rating']);
+	$title		=	strip_tags($_POST['title']);
+	$buy		=	strip_tags($_POST['buy']);
+	$price		=	strip_tags($_POST['price']);
+	$cover		=	strip_tags($_POST['cover']);
+	$duration	=	strip_tags($_POST['duration']);
+	$artist		=	strip_tags($_POST['artist']);
 	
 
 $data	=	array(
@@ -103,7 +115,7 @@ $data	=	array(
 				);
 				
 $ID		=	array(
-			'id'	=>	$id
+			'secure'	=>	$id
 			
 			);
 if(!empty($_POST['mp3']) and !empty($_POST['ogg']) and !empty($_POST['title']) and !empty($_POST['cover'])){
@@ -124,7 +136,7 @@ if(!empty($_POST['mp3']) and !empty($_POST['ogg']) and !empty($_POST['title']) a
 	case "delete";
 		
 		$delete		=	$wpdb->query(
-							"DELETE FROM $table WHERE id='$id'"
+							"DELETE FROM $table WHERE secure='$id'"
 						);
 	break;	
 }
@@ -132,7 +144,7 @@ if(!empty($_POST['mp3']) and !empty($_POST['ogg']) and !empty($_POST['title']) a
 
 
 
-$usql		=	"SELECT * FROM $table WHERE id='$id'";
+$usql		=	"SELECT * FROM $table WHERE secure='$id'";
 $uresults 	= 	$wpdb->get_row( $usql  );
 
 
@@ -210,7 +222,7 @@ $uresults 	= 	$wpdb->get_row( $usql  );
         </tr>
         <tr valign="top">
         <th scope="row"><strong>Song Title</strong></th>
-        <td><input type="text" size="50" name="title" value="<?php echo $uresults->title ; ?>" /></td>
+        <td><input type="text" size="50" name="title" value="<?php echo stripslashes($uresults->title); ?>" /></td>
         <td><span style="font-size:11px; color:#b2b2b2; font-style:italic;"><strong>Required</strong> Title of the song</span></td>
         </tr>
         <tr valign="top">
@@ -235,7 +247,7 @@ $uresults 	= 	$wpdb->get_row( $usql  );
         </tr>
         <tr valign="top">
         <th scope="row"><strong>Artist</strong></th>
-        <td><input type="text" size="50" name="artist" value="<?php echo $uresults->artist ; ?>" /></td>
+        <td><input type="text" size="50" name="artist" value="<?php echo stripslashes($uresults->artist); ?>" /></td>
         <td><span style="font-size:11px; color:#b2b2b2; font-style:italic;"> Artist of the song</span></td>
         </tr>
         
@@ -430,13 +442,13 @@ $uresults 	= 	$wpdb->get_row( $usql  );
 	<?php if( !empty( $results ) ) : ?>
     <?php foreach( $results as $result ): ?>
     <tr>
-        <td><?php echo $result->title; ?></td>
-        <td width="25%"><?php echo $result->artist; ?></td>
+        <td><?php echo stripslashes($result->title); ?></td>
+        <td width="25%"><?php echo stripslashes($result->artist); ?></td>
         <td width="10%"><?php echo $result->price; ?></td>
         <td width="10%"><?php echo $result->rating; ?></td>
         <td width="10%"><?php echo $result->duration; ?></td>
-        <td width="10%"><a href="<?php bloginfo('url'); ?>/wp-admin/admin.php?page=hmp_palylist&action=update&id=<?php echo $result->id; ?>">Update</a></td>
-        <td width="10%"><a href="<?php bloginfo('url'); ?>/wp-admin/admin.php?page=hmp_palylist&action=delete&id=<?php echo $result->id; ?>">Delete</a></td>
+        <td width="10%"><a href="<?php bloginfo('url'); ?>/wp-admin/admin.php?page=hmp_palylist&action=update&id=<?php echo $result->secure; ?>">Update</a></td>
+        <td width="10%"><a href="<?php bloginfo('url'); ?>/wp-admin/admin.php?page=hmp_palylist&action=delete&id=<?php echo $result->secure; ?>">Delete</a></td>
 	</tr>
 	<?php endforeach; ?>
 	

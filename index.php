@@ -5,7 +5,7 @@ Plugin Name: HTML5 jQuery Audio Player
 Plugin URI: http://wordpress.org/extend/plugins/html5-jquery-audio-player/
 Description: The trendiest audio player plugin for WordPress. Works on iPhone/iPad and other mobile devices. Insert with shortcode [hmp_player]
 Author: Enigma Digital
-Version: 2.3
+Version: 2.4
 Author URI: http://enigmaweb.com.au
 */
 
@@ -204,8 +204,8 @@ global $wpdb;
 $table		=	$wpdb->prefix."hmp_playlist";
 $table1		=	$wpdb->prefix."hmp_rating";
 
-$song_title		=	$_POST['trackname'];
-$rating_value	=	$_POST['rating'];	
+$song_title		=	strip_tags($_POST['trackname']);
+$rating_value	=	strip_tags($_POST['rating']);
 
 $songres	=	$wpdb->get_row("SELECT * FROM $table WHERE `title`='$song_title'") or die(mysql_error());
 $song_id	=	$songres->id;
