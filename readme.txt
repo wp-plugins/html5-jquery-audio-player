@@ -17,10 +17,10 @@ This trendy looking music player lets you add a single audio track or a full pla
 = Key Features =
 
 *	Uses mp3 and ogg file formats
-*Attractive and customisable design
-*Works in all major browsers - IE9+, Safari, Opera, Firefox, Chrome
-*Works on mobile devices including iPhone/iPad
-*Can enable Buy or Download tracks button - [tutorial here](http://www.enigmaweb.com.au/fetchapp-integration-tutorial/)
+*	Attractive and customisable design
+*	Works in all major browsers - IE9+, Safari, Opera, Firefox, Chrome
+*	Works on mobile devices including iPhone/iPad
+*	Can enable Buy or Download tracks button - [tutorial here](http://www.enigmaweb.com.au/fetchapp-integration-tutorial/)
 *	Autoplay on/off option
 *	User star ratings
 *	Add the player to any post/page using shortcode `[hmp_player]`
@@ -39,6 +39,8 @@ This is Lite (free) version of the plugin. [Get Pro Version](http://www.enigmawe
 *	More customisation control - adjust player width, choose whether to display ratings, artwork and more.
 *	Add up to 3 buy/download buttons so you can sell your music in several places (eg iTunes, BandCamp, etc)
 *	Display the player in a sidebar using a widget
+
+Please note that Pro version will not work on Windows Server environment.
 
 = Credits =
 
