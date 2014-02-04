@@ -3,7 +3,7 @@ Contributors: EnigmaWeb
 Donate link: https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=CEJ9HFWJ94BG4
 Tags: mp3 player, audio player, music player, ogg player, HTML5 audio player, mp3, podcast, jquery player
 Requires at least: 3.1
-Tested up to: 3.8
+Tested up to: 3.8.1
 Stable tag: trunk
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
@@ -31,7 +31,7 @@ This trendy looking music player lets you add a single audio track or a full pla
 
 = Pro vs Lite Version =
 
-This is Lite (free) version of the plugin. [Get Pro Version](http://www.enigmaweb.com.au/plugins/html5-jquery-audio-pro/) if you need the following advanced features:
+This is Lite (free) version of the plugin. [Get Pro Version](http://enigmaplugins.com/plugins/html5-jquery-audio-pro/) if you need the following advanced features:
 
 *	Mulitple Playlists - create as many playlists as you like and embed any number of players in your site.
 *	Drag n Drop playlist manager so you can order tracks
