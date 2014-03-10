@@ -27,7 +27,8 @@ This trendy looking music player lets you add a single audio track or a full pla
 
 = Demo =
 
-[Click here for demo](http://www.galaxybrass.com.au/audio-demo/)
+[Click here for demo](http://www.bluecatcombo.com.au/wedding-band-perth/)
+This demo shows the player with tracklist enabled, ratings on, and autoplay off. Duration and buy/download button is also switched off in this example.
 
 = Pro vs Lite Version =
 
@@ -39,6 +40,7 @@ This is Lite (free) version of the plugin. [Get Pro Version](http://enigmaplugin
 *	More customisation control - adjust player width, choose whether to display ratings, artwork and more.
 *	Add up to 3 buy/download buttons so you can sell your music in several places (eg iTunes, BandCamp, etc)
 *	Display the player in a sidebar using a widget
+*	***Responsive Coming Soon!***
 
 Please note that Pro version will not work on Windows Server environment.
 
@@ -75,7 +77,7 @@ There are heaps of free conversion tools available - run a search. Personally, I
 
 = I need ogg? Waaaa! =
 
-Yeah you really do. Having both the ogg and mp3 is what enables this plugin to work on all the different browsers and devices. You can use a converter to make an ogg copy of your files fast and free and you can batch process with most tools so please don't complain about needing ogg.
+Yeah you really do. Having both the ogg and mp3 is what enables this plugin to work on all the different browsers and devices. You can use a converter to make an ogg copy of your files fast and free and you can batch process with most tools so please don't complain about needing ogg. [More information here in the documentation.](http://enigmaplugins.com/mp3-and-ogg/)
 
 = The songs won't play =
 
@@ -87,7 +89,7 @@ AddType video/mp4 m4v`
 
 = It's not working in browser xyz - can you help? =
 
-The plugin works on IE9+, Safari, Opera, Firefox and Chrome, on both PC & Mac, and on mobile devices including iPhone/iPad and Android phones. If it's not working for you, try adding the Mime types above to your htaccess file. If it's still not working, the most common problem is jQuery conflict with your theme or another plugin - see above. Note that it has limited functionality in earlier version of IE where the html5 <audio> tag is not supported.
+The plugin works on IE9+, Safari, Opera, Firefox and Chrome, on both PC & Mac, and on mobile devices including iPhone/iPad and Android phones. If it's not working for you, try adding the Mime types above to your htaccess file. If it's still not working, the most common problem is jQuery conflict with your theme or another plugin - see above. Note that it has limited functionality in earlier version of IE where the html5 <audio> tag is not supported. [More information here in the documentation.](http://enigmaplugins.com/mp3-and-ogg/)
 
 = How do I use it in a widget? =
 Pro Version has a nice widget function - go to Appearance > Widgets and if the plugin is activated you will see a custom widget which you can drag into your sidebar. Be aware that you can't run two instances of the player on the same page, so if you're using it in the sidebar make sure you don't also add a different player to a page where the sidebar shows.
