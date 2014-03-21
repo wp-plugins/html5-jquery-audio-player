@@ -36,11 +36,11 @@ This is Lite (free) version of the plugin. [Get Pro Version](http://enigmaplugin
 
 *	Mulitple Playlists - create as many playlists as you like and embed any number of players in your site.
 *	Drag n Drop playlist manager so you can order tracks
+*	Fully Responsive Design
 *	Enhanced admin area including smart AJAX input forms
 *	More customisation control - adjust player width, choose whether to display ratings, artwork and more.
 *	Add up to 3 buy/download buttons so you can sell your music in several places (eg iTunes, BandCamp, etc)
 *	Display the player in a sidebar using a widget
-*	***Responsive Coming Soon!***
 
 Please note that Pro version will not work on Windows Server environment.
 
@@ -126,7 +126,9 @@ If you've tried all the obvious stuff and it's still not working please request 
 2. The display settings screen in WP-Admin
 
 == Changelog ==
-
+= 2.5 =
+* Bug fix - SQL warning message on Manage Songs
+* Miscellaneous UI enhancements
 
 = 2.4 =
 * Security patches
@@ -185,7 +187,9 @@ If you've tried all the obvious stuff and it's still not working please request 
 * Initial release
 
 == Upgrade Notice ==
-
+= 2.5 =
+* Bug fix - SQL warning message on Manage Songs
+* Miscellaneous UI enhancements
 
 = 2.4 =
 * Security patches - important to update

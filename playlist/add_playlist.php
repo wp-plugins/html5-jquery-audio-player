@@ -23,8 +23,19 @@ if(isset($_GET['action'])){
 	$action	=	strip_tags(urlencode($_GET['action']));
 }
 
+$mp3Sql = "Select * From wp_hmp_playlist";
+$mp3Qry = mysql_query($mp3Sql);
+$mp3Obj = mysql_fetch_object($mp3Qry);
 
-$maxSql = "Select Max(id) As maxId From wp_hmp_playlist";
+$mp3Id = $mp3Obj->id;
+echo $mp3Id;
+
+if(($mp3Id == 0) || ($mp3Id == "") || ($mp3Id == NULL)){
+	$maxSql = "Select * From wp_hmp_playlist";
+}
+else{
+	$maxSql = "Select Max(id) As maxId From wp_hmp_playlist";
+}
 $maxQry = mysql_query($maxSql);
 $maxObj = mysql_fetch_object($maxQry);
 
@@ -71,7 +82,7 @@ if(!empty($_POST['mp3']) and !empty($_POST['ogg']) and !empty($_POST['title']) a
 	$isuccess	=	"Song added successfully to the playlist";
 		
 }else{
-	$ierror		=	"You cannot left empty fields marked with 'required'";	
+	$ierror		=	"Please fill all fields marked 'required'";	
 }
 
 }
@@ -124,7 +135,7 @@ if(!empty($_POST['mp3']) and !empty($_POST['ogg']) and !empty($_POST['title']) a
 	$usuccess	=	"Song updated successfully ";
 		
 }else{
-	$uerror		=	"You cannot left empty fields marked with 'required'";	
+	$uerror		=	"Please fill all fields marked 'required'";	
 }
 
 }
@@ -182,11 +193,23 @@ $uresults 	= 	$wpdb->get_row( $usql  );
             </table>
 			<table cellpadding="0" class="widefat donation" style="margin-bottom:10px;">
             	<thead>
-                	<th scope="col">Pro Version</th>
+                	<th scope="col">Pro Version Features</th>
                 </thead>
                 <tbody>
                 	<tr>
-                    	<td style="border:0;">Upgrade to Pro Version for advanced features like multiple playlist function, sidebar widget, more customisation control, song order drag and drop and more<br /><a href="http://www.enigmaweb.com.au/plugins/html5-jquery-audio-pro" target="_blank">View Details</a></td>
+                    	<td style="border:0;">
+							<ul>
+								<li>Mulitple Playlists</li>
+								<li>Drag n Drop playlist manager so you can reorder tracks</li>
+								<li>Fully Responsive</li>
+								<li>More customisation options</li>
+								<li>On/off option for ratings, artwork, artist field, auto-repeat, and cover art</li>
+								<li>Widget support</li>
+								<li>3 buy/download buttons (optional)</li>
+							</ul>
+							<br />		
+							<a href="http://enigmaplugins.com/plugins/html5-jquery-audio-pro/" target="_blank">Get Pro</a>
+						</td>
                     </tr>
                    
                 </tbody>
@@ -197,7 +220,7 @@ $uresults 	= 	$wpdb->get_row( $usql  );
                 </thead>
                 <tbody>
                 	<tr>
-                    	<td style="border:0;">If you are having problems with this plugin please talk about them on the <a href="http://wordpress.org/support/plugin/html5-jquery-audio-player" target="_blank">Support Forum</a></td>
+                    	<td style="border:0;">If you are having problems with this plugin please visit the <a href="http://wordpress.org/support/plugin/html5-jquery-audio-player" target="_blank">Support Forum</a></td>
                     </tr>
                    
                 </tbody>
@@ -326,7 +349,19 @@ $uresults 	= 	$wpdb->get_row( $usql  );
                 </thead>
                 <tbody>
                 	<tr>
-                    	<td style="border:0;">Upgrade to Pro Version for advanced features like multiple playlist function<br /><a href="http://www.enigmaweb.com.au/plugins/html5-jquery-audio-pro" target="_blank">View Details</a></td>
+                    	<td style="border:0;">
+							<ul>
+								<li>Mulitple Playlists</li>
+								<li>Drag n Drop playlist manager so you can reorder tracks</li>
+								<li>Fully Responsive</li>
+								<li>More customisation options</li>
+								<li>On/off option for ratings, artwork, artist field, auto-repeat, and cover art</li>
+								<li>Widget support</li>
+								<li>3 buy/download buttons (optional)</li>
+							</ul>
+							<br />		
+							<a href="http://enigmaplugins.com/plugins/html5-jquery-audio-pro/" target="_blank">Get Pro</a>
+						</td>
                     </tr>
                    
                 </tbody>
@@ -337,7 +372,7 @@ $uresults 	= 	$wpdb->get_row( $usql  );
                 </thead>
                 <tbody>
                 	<tr>
-                    	<td style="border:0;">If you are having problems with this plugin please talk about them on the <a href="http://wordpress.org/support/plugin/html5-jquery-audio-player" target="_blank">Support Forum</a></td>
+                    	<td style="border:0;">If you are having problems with this plugin please visit the <a href="http://wordpress.org/support/plugin/html5-jquery-audio-player" target="_blank">Support Forum</a></td>
                     </tr>
                    
                 </tbody>

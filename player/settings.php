@@ -42,7 +42,19 @@
                 </thead>
                 <tbody>
                 	<tr>
-                    	<td style="border:0;">Upgrade to Pro Version for advanced features like multiple playlist function, sidebar widget, more customisation control, song order drag and drop and more<br /><a href="http://www.enigmaweb.com.au/plugins/html5-jquery-audio-pro" target="_blank">View Details</a></td>
+                    	<td style="border:0;">
+							<ul>
+								<li>Mulitple Playlists</li>
+								<li>Drag n Drop playlist manager so you can reorder tracks</li>
+								<li>Fully Responsive</li>
+								<li>More customisation options</li>
+								<li>On/off option for ratings, artwork, artist field, auto-repeat, and cover art</li>
+								<li>Widget support</li>
+								<li>3 buy/download buttons (optional)</li>
+							</ul>
+							<br />		
+							<a href="http://enigmaplugins.com/plugins/html5-jquery-audio-pro/" target="_blank">Get Pro</a>
+						</td>
                     </tr>
                    
                 </tbody>
@@ -53,7 +65,7 @@
                 </thead>
                 <tbody>
                 	<tr>
-                    	<td style="border:0;">If you are having problems with this plugin please talk about them on the <a href="http://wordpress.org/support/plugin/html5-jquery-audio-player" target="_blank">Support Forum</a></td>
+                    	<td style="border:0;">If you are having problems with this plugin please visit the <a href="http://wordpress.org/support/plugin/html5-jquery-audio-player" target="_blank">Support Forum</a></td>
                     </tr>
                    
                 </tbody>
