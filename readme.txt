@@ -3,7 +3,7 @@ Contributors: EnigmaWeb
 Donate link: https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=CEJ9HFWJ94BG4
 Tags: mp3 player, audio player, music player, ogg player, HTML5 audio player, mp3, podcast, jquery player
 Requires at least: 3.1
-Tested up to: 3.9
+Tested up to: 3.9.1
 Stable tag: trunk
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
@@ -109,12 +109,6 @@ Yes! Set the buy text option to Download, leave currency field & song price fiel
 
 Yep, sure can. This plugin is just a WordPress version of HTML5 Music Player by Saleem over at [Codebase Hero](http://www.codebasehero.com/2011/06/html-music-player/)
 
-= What features are being added soon? =
-* Other language support
-* Import/export csv playlist function
-* On/off button for Artist field, Cover Art, and Autorepeat
-* Responsive
-
 = Where can I get support for this plugin? =
 
 If you've tried all the obvious stuff and it's still not working please request support via the forum. Remember to include a link to your site where the player is embedded, and a full description of the issue plus the steps you've already taken to try to solve it.
@@ -126,6 +120,12 @@ If you've tried all the obvious stuff and it's still not working please request 
 2. The display settings screen in WP-Admin
 
 == Changelog ==
+
+= 2.6 =
+* Internationalisation	[New]
+* Updating and Deleting song issue fixed [Bug]
+* Unknown column 'secure' in 'field list'fixed [Bug]
+
 = 2.5 =
 * Bug fix - SQL warning message on Manage Songs
 * Miscellaneous UI enhancements
@@ -187,6 +187,12 @@ If you've tried all the obvious stuff and it's still not working please request 
 * Initial release
 
 == Upgrade Notice ==
+
+= 2.6 =
+* Internationalisation	[New]
+* Updating and Deleting song issue fixed [Bug]
+* Unknown column 'secure' in 'field list'fixed [Bug]
+
 = 2.5 =
 * Bug fix - SQL warning message on Manage Songs
 * Miscellaneous UI enhancements

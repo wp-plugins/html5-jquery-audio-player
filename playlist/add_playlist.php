@@ -5,7 +5,7 @@
 			
 		
 <div class="wrap">
-<h2>Manage Songs</h2>
+<h2><?php _e('Manage Songs', 'hmpf') ?></h2>
 <?php
 
 
@@ -28,7 +28,6 @@ $mp3Qry = mysql_query($mp3Sql);
 $mp3Obj = mysql_fetch_object($mp3Qry);
 
 $mp3Id = $mp3Obj->id;
-echo $mp3Id;
 
 if(($mp3Id == 0) || ($mp3Id == "") || ($mp3Id == NULL)){
 	$maxSql = "Select * From wp_hmp_playlist";
@@ -79,10 +78,10 @@ $data	=	array(
 if(!empty($_POST['mp3']) and !empty($_POST['ogg']) and !empty($_POST['title']) and !empty($_POST['cover'])){
 	
 	$insert		=	$wpdb->insert($table,$data) or die(mysql_error());
-	$isuccess	=	"Song added successfully to the playlist";
+	$isuccess	=	__("Song added successfully to the playlist", "hmpf");
 		
 }else{
-	$ierror		=	"Please fill all fields marked 'required'";	
+	$ierror		=	__("Please fill all fields marked 'required'", "hmpf");
 }
 
 }
@@ -132,17 +131,15 @@ $ID		=	array(
 if(!empty($_POST['mp3']) and !empty($_POST['ogg']) and !empty($_POST['title']) and !empty($_POST['cover'])){
 	
 	$update		=	$wpdb->update($table,$data,$ID);
-	$usuccess	=	"Song updated successfully ";
+	$usuccess	=	__("Song updated successfully ", "hmpf");
 		
 }else{
-	$uerror		=	"Please fill all fields marked 'required'";	
+	$uerror		=	__("Please fill all fields marked 'required'", "hmpf");
 }
 
 }
 	
 	break;
-	
-	
 	
 	case "delete";
 		
@@ -152,12 +149,8 @@ if(!empty($_POST['mp3']) and !empty($_POST['ogg']) and !empty($_POST['title']) a
 	break;	
 }
 
-
-
-
 $usql		=	"SELECT * FROM $table WHERE secure='$id'";
 $uresults 	= 	$wpdb->get_row( $usql  );
-
 
 ?>
 
@@ -171,11 +164,11 @@ $uresults 	= 	$wpdb->get_row( $usql  );
         <td rowspan="9" width="25%">
          	<table cellpadding="0" class="widefat donation" style="margin-bottom:10px; border:solid 2px #008001;" width="50%">
             	<thead>
-                	<th scope="col"><strong style="color:#008001;">Help Improve This Plugin!</strong></th>
+                	<th scope="col"><strong style="color:#008001; margin-left: 10px;"><?php _e("Help Improve This Plugin!", "hmpf") ?></strong></th>
                 </thead>
                 <tbody>
                 	<tr>
-                    	<td style="border:0;">Enjoyed this plugin? All donations are used to improve and further develop this plugin. Thanks for your contribution.</td>
+                    	<td style="border:0;"><?php _e("Enjoyed this plugin? All donations are used to improve and further develop this plugin. Thanks for your contribution.", "hmpf") ?></td>
                     </tr>
                     <tr>
                     	<td style="border:0;"><!--<img src="<?php //echo plugin_dir_url( __FILE__ )."donate.png" ; ?>"  align="middle" />--><form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_blank">
@@ -186,29 +179,29 @@ $uresults 	= 	$wpdb->get_row( $usql  );
 						</form></td>
                     </tr>
                     <tr>
-                    	<td style="border:0;">You can also help by <a href="http://wordpress.org/extend/plugins/html5-jquery-audio-player/" target="_blank">rating this plugin on wordpress.org</a></td>
+                    	<td style="border:0;">You can also help by <a href="http://wordpress.org/extend/plugins/html5-jquery-audio-player/" target="_blank"><?php _e("rating this plugin on wordpress.org", "hmpf") ?></a></td>
                     </tr>
                    
                 </tbody>
             </table>
 			<table cellpadding="0" class="widefat donation" style="margin-bottom:10px;">
             	<thead>
-                	<th scope="col">Pro Version Features</th>
+                <th scope="col" style="margin-left: 10px;"><?php _e("Pro Version Features", "hmpf") ?></th>
                 </thead>
                 <tbody>
                 	<tr>
                     	<td style="border:0;">
 							<ul>
-								<li>Mulitple Playlists</li>
-								<li>Drag n Drop playlist manager so you can reorder tracks</li>
-								<li>Fully Responsive</li>
-								<li>More customisation options</li>
-								<li>On/off option for ratings, artwork, artist field, auto-repeat, and cover art</li>
-								<li>Widget support</li>
-								<li>3 buy/download buttons (optional)</li>
+								<li><?php _e("Mulitple Playlists", "hmpf") ?></li>
+								<li><?php _e("Drag n Drop playlist manager so you can reorder tracks", "hmpf") ?></li>
+								<li><?php _e("Fully Responsive", "hmpf") ?></li>
+								<li><?php _e("More customisation options", "hmpf") ?></li>
+								<li><?php _e("On/off option for ratings, artwork, artist field, auto-repeat, and cover art", "hmpf") ?></li>
+								<li><?php _e("Widget support", "hmpf") ?></li>
+								<li><?php _e("3 buy/download buttons (optional)", "hmpf") ?></li>
 							</ul>
 							<br />		
-							<a href="http://enigmaplugins.com/plugins/html5-jquery-audio-pro/" target="_blank">Get Pro</a>
+							<a href="http://enigmaplugins.com/plugins/html5-jquery-audio-pro/" target="_blank"><?php _e("Get Pro", "hmpf") ?></a>
 						</td>
                     </tr>
                    
@@ -216,11 +209,11 @@ $uresults 	= 	$wpdb->get_row( $usql  );
             </table>
             <table cellpadding="0" class="widefat" border="0">
             	<thead>
-                	<th scope="col">Need Support?</th>
+                	<th scope="col" style="margin-left: 10px;"><?php _e("Need Support?", "hmpf") ?></th>
                 </thead>
                 <tbody>
                 	<tr>
-                    	<td style="border:0;">If you are having problems with this plugin please visit the <a href="http://wordpress.org/support/plugin/html5-jquery-audio-player" target="_blank">Support Forum</a></td>
+                    	<td style="border:0;"><?php _e("If you are having problems with this plugin please visit the", "hmpf") ?> <a href="http://wordpress.org/support/plugin/html5-jquery-audio-player" target="_blank"><?php _e("Support Forum", "hmpf") ?></a></td>
                     </tr>
                    
                 </tbody>
@@ -228,55 +221,55 @@ $uresults 	= 	$wpdb->get_row( $usql  );
          </td>
         </tr><form name="addplaylist" action="" method="post" enctype="multipart/form-data">
         <tr valign="top">
-        <th scope="row"><strong>MP3 Link update</strong></th>
+        <th scope="row"><strong><?php _e("MP3 Link update", "hmpf") ?></strong></th>
         <td width="29%"><input type="text" size="50" name="mp3" value="<?php echo $uresults->mp3 ; ?>" class="upload-url" /><input id="st_upload_button" class="st_upload_button" type="button" name="upload_button" value="Upload" style="background: white;border: solid 1px #CCC;cursor: pointer;"></td>
-        <td><span style="font-size:11px; color:#b2b2b2; font-style:italic;"><strong>Required</strong> Full File Path of mp3 file</span></td>
+        <td><span style="font-size:11px; color:#b2b2b2; font-style:italic;"><strong><?php _e("Required", "hmpf") ?></strong> <?php _e("Full File Path of mp3 file", "hmpf") ?></span></td>
         
         </tr>
         <tr valign="top">
-        <th scope="row"><strong>Ogg Link</strong></th>
+        <th scope="row"><strong><?php _e("Ogg Link", "hmpf") ?></strong></th>
         <td><input type="text" size="50" name="ogg" value="<?php echo $uresults->ogg ; ?>" class="upload-url" /><input id="st_upload_button" class="st_upload_button" type="button" name="upload_button" value="Upload" style="background: white;border: solid 1px #CCC;cursor: pointer;"></td>
-        <td><span style="font-size:11px; color:#b2b2b2; font-style:italic;"><strong>Required</strong> Full File Path of ogg file</span></td>
+        <td><span style="font-size:11px; color:#b2b2b2; font-style:italic;"><strong><?php _e("Required", "hmpf") ?></strong> <?php _e("Full File Path of ogg file", "hmpf") ?></span></td>
         </tr>
         <tr valign="top">
-        <th scope="row"><strong>Rating</strong></th>
+        <th scope="row"><strong><?php _e("Rating", "hmpf") ?></strong></th>
         <td><input type="text" size="50" name="rating" value="<?php echo $uresults->rating ; ?>" /></td>
-        <td><span style="font-size:11px; color:#b2b2b2; font-style:italic;"> Plz put digit 1 to 5</span></td>
+        <td><span style="font-size:11px; color:#b2b2b2; font-style:italic;"> <?php _e("Plz put digit 1 to 5", "hmpf") ?></span></td>
         </tr>
         <tr valign="top">
-        <th scope="row"><strong>Song Title</strong></th>
+        <th scope="row"><strong><?php _e("Song Title", "hmpf") ?></strong></th>
         <td><input type="text" size="50" name="title" value="<?php echo stripslashes($uresults->title); ?>" /></td>
-        <td><span style="font-size:11px; color:#b2b2b2; font-style:italic;"><strong>Required</strong> Title of the song</span></td>
+        <td><span style="font-size:11px; color:#b2b2b2; font-style:italic;"><strong><?php _e("Required", "hmpf") ?></strong> <?php _e("Title of the song", "hmpf") ?></span></td>
         </tr>
         <tr valign="top">
-        <th scope="row"><strong>Link Buy Text</strong></th>
+        <th scope="row"><strong><?php _e("Link Buy Text", "hmpf") ?></strong></th>
         <td><input type="text" size="50" name="buy" value="<?php echo $uresults->buy ; ?>" /></td>
-        <td><span style="font-size:11px; color:#b2b2b2; font-style:italic;"> This will link BUY button</span></td>
+        <td><span style="font-size:11px; color:#b2b2b2; font-style:italic;"> <?php _e("This will link BUY button", "hmpf") ?></span></td>
         </tr>
         <tr valign="top">
-        <th scope="row"><strong>Song Price</strong></th>
+        <th scope="row"><strong><?php _e("Song Price" ,"hmpf") ?></strong></th>
         <td><input type="text" size="50" name="price" value="<?php echo $uresults->price ; ?>" /></td>
-        <td><span style="font-size:11px; color:#b2b2b2; font-style:italic;"> Price of the song </span></td>
+        <td><span style="font-size:11px; color:#b2b2b2; font-style:italic;"> <?php _e("Price of the song", "hmpf") ?> </span></td>
         </tr>
         <tr valign="top">
-        <th scope="row"><strong>Cover Image</strong></th>
+            <th scope="row"><strong><?php _e("Cover Image", "hmpf") ?></strong></th>
         <td><input type="text" size="50" name="cover" value="<?php echo $uresults->cover ; ?>" class="upload-url" /><input id="st_upload_button" class="st_upload_button" type="button" name="upload_button" value="Upload" style="background: white;border: solid 1px #CCC;cursor: pointer;"></td>
-        <td><span style="font-size:11px; color:#b2b2b2; font-style:italic;"><strong>Required</strong> Full File Path to cover image ( 125*125 )</span></td>
+        <td><span style="font-size:11px; color:#b2b2b2; font-style:italic;"><strong><?php _e("Required", "hmpf") ?></strong> <?php _e("Full File Path to cover image ( 125*125 )", "") ?></span></td>
         </tr>
         <tr valign="top">
-        <th scope="row"><strong>Duration</strong></th>
+        <th scope="row"><strong><?php _e("Duration", "hmpf") ?></strong></th>
         <td><input type="text" size="50" name="duration" value="<?php echo $uresults->duration ; ?>" /></td>
-        <td><span style="font-size:11px; color:#b2b2b2; font-style:italic;">Duration of the song</span></td>
+        <td><span style="font-size:11px; color:#b2b2b2; font-style:italic;"><?php _e("Duration of the song", "hmpf") ?></span></td>
         </tr>
         <tr valign="top">
-        <th scope="row"><strong>Artist</strong></th>
+        <th scope="row"><strong><?php _e("Artist", "hmpf") ?></strong></th>
         <td><input type="text" size="50" name="artist" value="<?php echo stripslashes($uresults->artist); ?>" /></td>
-        <td><span style="font-size:11px; color:#b2b2b2; font-style:italic;"> Artist of the song</span></td>
+        <td><span style="font-size:11px; color:#b2b2b2; font-style:italic;"> <?php _e("Artist of the song", "hmpf") ?></span></td>
         </tr>
         
          <tr valign="top">
         <th scope="row"><input type="submit" class="button-primary" value="<?php _e('Update Song') ?>" name="update" /></th>
-        <td> <a href="<?php bloginfo('url'); ?>/wp-admin/admin.php?page=hmp_palylist&action=add"><input type="button" class="button-primary" value="<?php _e('Add New Song') ?>" name="update" /></a></td>
+        <td> <a href="<?php bloginfo('url'); ?>/wp-admin/admin.php?page=hmp_palylist&action=add"><input type="button" class="button-primary" value="<?php _e("Add New Song", "hmpf") ?>" name="update" /></a></td>
         <td></td>
         </tr>
          
@@ -323,11 +316,11 @@ $uresults 	= 	$wpdb->get_row( $usql  );
          <td rowspan="9" width="25%">
          	<table cellpadding="0" class="widefat donation" style="margin-bottom:10px; border:solid 2px #008001;" width="50%">
             	<thead>
-                	<th scope="col"><strong style="color:#008001;">Help Improve This Plugin!</strong></th>
+                	<th scope="col"><strong style="color:#008001; margin-left: 10px;"><?php _e("Help Improve This Plugin!", "hmpf") ?></strong></th>
                 </thead>
                 <tbody>
                 	<tr>
-                    	<td style="border:0;">Enjoyed this plugin? All donations are used to improve and further develop this plugin. Thanks for your contribution.</td>
+                    	<td style="border:0;"><?php _e("Enjoyed this plugin? All donations are used to improve and further develop this plugin. Thanks for your contribution.", "hmpf") ?></td>
                     </tr>
                     <tr>
                     	<td style="border:0;"><!--<img src="<?php //echo plugin_dir_url( __FILE__ )."donate.png" ; ?>"  align="middle" />--><form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_blank">
@@ -338,29 +331,29 @@ $uresults 	= 	$wpdb->get_row( $usql  );
 						</form></td>
                     </tr>
                     <tr>
-                    	<td style="border:0;">You can also help by <a href="http://wordpress.org/extend/plugins/html5-jquery-audio-player/" target="_blank">rating this plugin on wordpress.org</a></td>
+                    	<td style="border:0;"><?php _e("You can also help by", "hmpf") ?> <a href="http://wordpress.org/extend/plugins/html5-jquery-audio-player/" target="_blank"><?php _e("rating this plugin on wordpress.org", "hmpf") ?></a></td>
                     </tr>
                    
                 </tbody>
             </table>
 			<table cellpadding="0" class="widefat donation" style="margin-bottom:10px;">
             	<thead>
-                	<th scope="col">Pro Version</th>
+                	<th scope="col" style="padding-left: 12px;"><?php _e("Pro Version", "hmpf") ?></th>
                 </thead>
                 <tbody>
                 	<tr>
                     	<td style="border:0;">
 							<ul>
-								<li>Mulitple Playlists</li>
-								<li>Drag n Drop playlist manager so you can reorder tracks</li>
-								<li>Fully Responsive</li>
-								<li>More customisation options</li>
-								<li>On/off option for ratings, artwork, artist field, auto-repeat, and cover art</li>
-								<li>Widget support</li>
-								<li>3 buy/download buttons (optional)</li>
+								<li><?php _e("Mulitple Playlists", "hmpf") ?></li>
+								<li><?php _e("Drag n Drop playlist manager so you can reorder tracks", "hmpf") ?></li>
+								<li><?php _e("Fully Responsive", "hmpf") ?></li>
+								<li><?php _e("More customisation options", "hmpf") ?></li>
+								<li><?php _e("On/off option for ratings, artwork, artist field, auto-repeat, and cover art", "hmpf") ?></li>
+								<li><?php _e("Widget support", "hmpf") ?></li>
+								<li><?php _e("3 buy/download buttons (optional)", "") ?></li>
 							</ul>
 							<br />		
-							<a href="http://enigmaplugins.com/plugins/html5-jquery-audio-pro/" target="_blank">Get Pro</a>
+							<a href="http://enigmaplugins.com/plugins/html5-jquery-audio-pro/" target="_blank"><?php _e("Get Pro", "hmpf") ?></a>
 						</td>
                     </tr>
                    
@@ -368,11 +361,11 @@ $uresults 	= 	$wpdb->get_row( $usql  );
             </table>
             <table cellpadding="0" class="widefat" border="0">
             	<thead>
-                	<th scope="col">Need Support?</th>
+                	<th scope="col" style="padding-left: 12px;"><?php _e("Need Support?" ,"hmpf") ?></th>
                 </thead>
                 <tbody>
                 	<tr>
-                    	<td style="border:0;">If you are having problems with this plugin please visit the <a href="http://wordpress.org/support/plugin/html5-jquery-audio-player" target="_blank">Support Forum</a></td>
+                    	<td style="border:0;"><?php _e("If you are having problems with this plugin please visit the", "hmpf") ?> <a href="http://wordpress.org/support/plugin/html5-jquery-audio-player" target="_blank"><?php _e("Support Forum", "hmpf") ?></a></td>
                     </tr>
                    
                 </tbody>
@@ -381,54 +374,54 @@ $uresults 	= 	$wpdb->get_row( $usql  );
         </tr>
         <form name="addplaylist" action="" method="post" enctype="multipart/form-data">
         <tr valign="top">
-        <th scope="row"><strong>MP3 Link</strong></th>
+        <th scope="row"><strong><?php _e("MP3 Link", "hmpf") ?></strong></th>
         <td width="29%"><input type="text" size="50" name="mp3" class="upload-url" /><input id="st_upload_button" class="st_upload_button" type="button" name="upload_button" value="Upload" style="background: white;border: solid 1px #CCC;cursor: pointer;"></td>
-        <td><span style="font-size:11px; color:#b2b2b2; font-style:italic;"><strong>Required</strong> Full File Path of mp3 file</span></td>
+        <td><span style="font-size:11px; color:#b2b2b2; font-style:italic;"><strong><?php _e("Required", "hmpf") ?></strong> <?php _e("Full File Path of mp3 file", "hmpf") ?></span></td>
          
         </tr>
         <tr valign="top">
-        <th scope="row"><strong>Ogg Link</strong></th>
+        <th scope="row"><strong><?php _e("Ogg Link", "hmpf") ?></strong></th>
         <td><input type="text" size="50" name="ogg" class="upload-url" /><input id="st_upload_button" class="st_upload_button" type="button" name="upload_button" value="Upload" style="background: white;border: solid 1px #CCC;cursor: pointer;"></td>
-        <td><span style="font-size:11px; color:#b2b2b2; font-style:italic;"><strong>Required</strong> Full File Path of ogg file</span></td>
+        <td><span style="font-size:11px; color:#b2b2b2; font-style:italic;"><strong><?php _e("Required", "hmpf") ?></strong> <?php _e("Full File Path of ogg file", "hmpf") ?></span></td>
         </tr>
         <tr valign="top">
-        <th scope="row"><strong>Rating</strong></th>
+        <th scope="row"><strong><?php _e("Rating", "hmpf") ?></strong></th>
         <td><input type="text" size="50" name="rating" /></td>
-        <td><span style="font-size:11px; color:#b2b2b2; font-style:italic;"> Please put digit 1 to 5</span></td>
+        <td><span style="font-size:11px; color:#b2b2b2; font-style:italic;"> <?php _e("Please put digit 1 to 5", "hmpf") ?></span></td>
         </tr>
         <tr valign="top">
-        <th scope="row"><strong>Song Title</strong></th>
+        <th scope="row"><strong><?php _e("Song Title", "hmpf") ?></strong></th>
         <td><input type="text" size="50" name="title" /></td>
-        <td><span style="font-size:11px; color:#b2b2b2; font-style:italic;"><strong>Required</strong> Title of the song</span></td>
+        <td><span style="font-size:11px; color:#b2b2b2; font-style:italic;"><strong><?php _e("Required", "hmpf") ?></strong> <?php _e("Title of the song", "hmpf") ?></span></td>
         </tr>
         <tr valign="top">
-        <th scope="row"><strong>Link Buy Text</strong></th>
+        <th scope="row"><strong><?php _e("Link Buy Text", "hmpf") ?></strong></th>
         <td><input type="text" size="50" name="buy" /></td>
-        <td><span style="font-size:11px; color:#b2b2b2; font-style:italic;"> This will link BUY button</span></td>
+        <td><span style="font-size:11px; color:#b2b2b2; font-style:italic;"> <?php _e("This will link BUY button" ,"hmpf") ?></span></td>
         </tr>
         <tr valign="top">
-        <th scope="row"><strong>Song Price</strong></th>
+        <th scope="row"><strong><?php _e("Song Price", "hmpf") ?></strong></th>
         <td><input type="text" size="50" name="price" /></td>
-        <td><span style="font-size:11px; color:#b2b2b2; font-style:italic;"> Price of the song </span></td>
+        <td><span style="font-size:11px; color:#b2b2b2; font-style:italic;"> <?php _e("Price of the song", "hmpf") ?> </span></td>
         </tr>
         <tr valign="top">
-        <th scope="row"><strong>Cover Image</strong></th>
+        <th scope="row"><strong><?php _e("Cover Image", "hmpf") ?></strong></th>
         <td><input type="text" size="50" name="cover" class="upload-url" /><input id="st_upload_button" class="st_upload_button" type="button" name="upload_button" value="Upload" style="background: white;border: solid 1px #CCC;cursor: pointer;"></td>
-        <td><span style="font-size:11px; color:#b2b2b2; font-style:italic;"><strong>Required</strong> Full File Path to cover image ( 125*125 )</span></td>
+        <td><span style="font-size:11px; color:#b2b2b2; font-style:italic;"><strong><?php _e("Required", "hmpf") ?></strong> <?php _e("Full File Path to cover image ( 125*125 )", "hmpf") ?></span></td>
         </tr>
         <tr valign="top">
-        <th scope="row"><strong>Duration</strong></th>
+        <th scope="row"><strong><?php _e("Duration", "hmpf") ?></strong></th>
         <td><input type="text" size="50" name="duration" /></td>
-        <td><span style="font-size:11px; color:#b2b2b2; font-style:italic;"><strong>Format: 10:00</strong> Duration of the song</span></td>
+        <td><span style="font-size:11px; color:#b2b2b2; font-style:italic;"><strong><?php _e("Format: 10:00", "hmpf") ?></strong> <?php _e("Duration of the song", "hmpf") ?></span></td>
         </tr>
         <tr valign="top">
-        <th scope="row"><strong>Artist</strong></th>
+        <th scope="row"><strong><?php _e("Artist", "hmpf") ?></strong></th>
         <td><input type="text" size="50" name="artist" /></td>
-        <td><span style="font-size:11px; color:#b2b2b2; font-style:italic;"> Artist of the song</span></td>
+        <td><span style="font-size:11px; color:#b2b2b2; font-style:italic;"> <?php _e("Artist of the song", "hmpf") ?></span></td>
         </tr>
         
          <tr valign="top">
-        <th scope="row"><input type="submit" class="button-primary" value="<?php _e('Add Song') ?>" name="submit" /></th>
+        <th scope="row"><input type="submit" class="button-primary" value="<?php _e('Add Song', 'hmpf') ?>" name="submit" /></th>
         <td></td>
         <td></td>
         </tr>
@@ -445,25 +438,25 @@ $uresults 	= 	$wpdb->get_row( $usql  );
 	<thead>
 	<tr>
 		
-        <th scope="col"><a href="javascrip:;">Title</a></th>
-        <th scope="col" width="25%" ><a href="javascrip:;">Artist</a></th>
-        <th scope="col" width="10%"><a href="javascrip:;">Price</a></th>
-        <th scope="col" width="10%"><a href="javascrip:;">Rating</a></th>
-        <th scope="col" width="10%"><a href="javascrip:;">Duration</a></th>
-        <th scope="col" width="10%"><a href="javascrip:;">Edit</a></th>	
-        <th scope="col" width="10%"><a href="javascrip:;">Delete</a></th>	
+        <th scope="col"><a href="javascrip:;"><?php _e("Title", "hmpf") ?></a></th>
+        <th scope="col" width="25%" ><a href="javascrip:;"><?php _e("Artist", "hmpf") ?></a></th>
+        <th scope="col" width="10%"><a href="javascrip:;"><?php _e("Price", "hmpf") ?></a></th>
+        <th scope="col" width="10%"><a href="javascrip:;"><?php _e("Rating", "hmpf") ?></a></th>
+        <th scope="col" width="10%"><a href="javascrip:;"><?php _e("Duration", "hmpf") ?></a></th>
+        <th scope="col" width="10%"><a href="javascrip:;"><?php _e("Edit", "hmpf") ?></a></th>	
+        <th scope="col" width="10%"><a href="javascrip:;"><?php _e("Delete", "hmpf") ?></a></th>	
      </tr>
 	</thead>
 
 	<tfoot>
 	<tr>
-	    <th scope="col"><a href="javascrip:;">Title</a></th>
-        <th scope="col" width="25%" ><a href="javascrip:;">Artist</a></th>
-        <th scope="col" width="10%"><a href="javascrip:;">Price</a></th>
-        <th scope="col" width="10%"><a href="javascrip:;">Rating</a></th>
-        <th scope="col" width="10%"><a href="javascrip:;">Duration</a></th>
-        <th scope="col" width="10%"><a href="javascrip:;">Edit</a></th>	
-        <th scope="col" width="10%"><a href="javascrip:;">Delete</a></th>		
+	    <th scope="col"><a href="javascrip:;"><?php _e("Title", "hmpf") ?></a></th>
+        <th scope="col" width="25%" ><a href="javascrip:;"><?php _e("Artist", "hmpf") ?></a></th>
+        <th scope="col" width="10%"><a href="javascrip:;"><?php _e("Price", "hmpf") ?></a></th>
+        <th scope="col" width="10%"><a href="javascrip:;"><?php _e("Rating", "hmpf") ?></a></th>
+        <th scope="col" width="10%"><a href="javascrip:;"><?php _e("Duration", "hmpf") ?></a></th>
+        <th scope="col" width="10%"><a href="javascrip:;"><?php _e("Edit", "hmpf") ?></a></th>	
+        <th scope="col" width="10%"><a href="javascrip:;"><?php _e("Delete", "hmpf") ?></a></th>		
      </tr>
 	</tfoot>
 
@@ -482,14 +475,14 @@ $uresults 	= 	$wpdb->get_row( $usql  );
         <td width="10%"><?php echo $result->price; ?></td>
         <td width="10%"><?php echo $result->rating; ?></td>
         <td width="10%"><?php echo $result->duration; ?></td>
-        <td width="10%"><a href="<?php bloginfo('url'); ?>/wp-admin/admin.php?page=hmp_palylist&action=update&id=<?php echo $result->secure; ?>">Update</a></td>
-        <td width="10%"><a href="<?php bloginfo('url'); ?>/wp-admin/admin.php?page=hmp_palylist&action=delete&id=<?php echo $result->secure; ?>">Delete</a></td>
+        <td width="10%"><a href="<?php bloginfo('url'); ?>/wp-admin/admin.php?page=hmp_palylist&action=update&id=<?php echo $result->secure; ?>"><?php _e("Update", "hmpf") ?></a></td>
+        <td width="10%"><a href="<?php bloginfo('url'); ?>/wp-admin/admin.php?page=hmp_palylist&action=delete&id=<?php echo $result->secure; ?>"><?php _e("Delete", "hmpf") ?></a></td>
 	</tr>
 	<?php endforeach; ?>
 	
 	<?php else: ?>
     
-    <td class="posts column-posts num" colspan="7">Please Add Songs No Songs Listed Yet</td>
+    <td class="posts column-posts num" colspan="7"><?php _e("Please Add Songs No Songs Listed Yet", "hmpf") ?></td>
     
 	<?php endif; ?>
   	
